@@ -31,7 +31,8 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 ### Coordinator (Athlete Fellow and Program Lead), LA28 Olympic & Paralympic Games
 *Los Angeles, CA | Jan 2022 to Jun 2024*
 
-* Owned LA28 Celebrates brand activations end to end across 150+ locations: strategy, budgets, planning, execution, and post-event reporting, coordinating events, partnerships, technology, and leadership teams.
+* Owned LA28 Celebrates activations end to end with LA pro sports teams and community and cultural organizations: strategy, budgets, planning, execution, and post-event reporting.
+* Identified and stood up a cost-effective brand activation across 150+ locations, deepening local-government and partner relationships.
 * Ran logistics for a $1M sports-equipment inventory across multiple warehouses; cut storage costs 15% and delivered $300,000 of equipment to LA youth programs in 2024 with 100% process compliance and zero inventory loss.
 * Served as one of two Salesforce Administrators for the organization: supported the CRM rollout, onboarded 120+ staff to 95% platform adoption, and authored the user documentation.
 * Synthesized requirements from school districts, city departments, and sports governing bodies into one unified logistics and compliance framework.
