@@ -56,7 +56,9 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 ## Education
 
 * Master of Sports Administration, Russian International Olympic University (2021 to 2022)
-* Master of Physical Education, Volga Region State University; Bachelor and Master, Sports Management, Moscow State University of Transport; PhD candidate (ABD), Management.
+* PhD candidate (ABD), Management, Moscow State University of Transport
+* Master and Bachelor, Sports Management, Moscow State University of Transport
+* Master of Physical Education, Volga Region State University
 
 ## Certifications
 
