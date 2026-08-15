@@ -42,7 +42,7 @@ Olympic silver medalist, independent researcher, and program and delivery leader
 
 **Athlete Fellowship (Jan 2022 to Dec 2022)**
 
-* Served as one of two Salesforce Administrators for the organization: supported implementation, facilitated user onboarding and adoption, and authored user documentation, including integrations with Outlook and Slack.
+* Served as one of two Salesforce Administrators for the organization: supported implementation, facilitated user onboarding and adoption for 180 users, and authored user documentation, including integrations with Outlook and Slack.
 * Consolidated Paralympic ticket pricing across three Games editions (London 2012, Rio 2016, Tokyo 2020) to inform the LA28 Paralympic ticketing model; contributed to a transportation hub capacity data model for the 2028 Games.
 
 ### Committee Chair (volunteer), USA Fencing Hall of Fame Committee
