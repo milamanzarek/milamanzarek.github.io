@@ -1,6 +1,6 @@
 ---
 title: "LA28: $1M equipment logistics and citywide brand activations"
-excerpt: "Turned an untracked, multi-warehouse $1M sports-equipment inventory into a dashboard-backed distribution system and delivered $300K of equipment to LA youth programs with zero inventory loss."
+excerpt: "Turned an untracked, multi-warehouse $1M sports-equipment inventory into a dashboard-backed distribution system and delivered $300K of equipment to LA youth programs in 2024."
 collection: portfolio
 ---
 
@@ -18,7 +18,6 @@ More than a million dollars of sports equipment sat scattered across Los Angeles
 
 * 15% storage cost reduction on the equipment program.
 * $300,000 of equipment delivered to LA youth programs in 2024.
-* 100% process compliance, zero inventory loss.
 * A cost-effective brand activation stood up across 150+ locations, deepening local-government and partner relationships.
 
 **Stack:** Smartsheet, Workday, Salesforce, Agiloft.
