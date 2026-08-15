@@ -21,3 +21,5 @@ A citywide youth sports program was expanding across Los Angeles, but the operat
 * The data foundation was strong enough to power a second public-facing product (see the PlayLA public web app case).
 
 **Stack:** Airtable, Google Cloud, Mermaid.js, Vite/TypeScript.
+
+[View the full designed case study](/case-study-playla-flag-football-ops.html)

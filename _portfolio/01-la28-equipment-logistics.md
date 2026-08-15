@@ -21,3 +21,5 @@ More than a million dollars of sports equipment sat scattered across Los Angeles
 * A cost-effective brand activation stood up across 150+ locations, deepening local-government and partner relationships.
 
 **Stack:** Smartsheet, Workday, Salesforce, Agiloft.
+
+[View the full designed case study](/case-study-la28-inventory-distribution.html)

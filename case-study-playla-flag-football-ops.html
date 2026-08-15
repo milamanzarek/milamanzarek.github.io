@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="description"
+ content="PlayLA Flag Football Ops case study by Kamilla Gafurzianova, OLY: citywide youth sports operations system, geographic mapping, Airtable infrastructure, and bilingual field app."
+ >
+ <meta name="theme-color" content="#14141d">
+ <link rel="icon" href="favicon.svg" type="image/svg+xml">
+ <meta property="og:title" content="PlayLA Flag Football Ops Case Study | Kamilla Gafurzianova, OLY">
+ <meta property="og:type" content="article">
+ <title>PlayLA Flag Football Ops Case Study | Kamilla Gafurzianova, OLY</title>
+ <link rel="stylesheet" href="kg-dark.css">
+ <style>
+ /* Page-specific overrides for PlayLA Ops green accent */
+ .hero {
+ 
+ }
+ .section-kicker { color: var(--mint); }
+ .workflow-step { border-top-color: var(--mint); }
+ .workflow-step:nth-child(2) { border-top-color: var(--accent); }
+ .workflow-step:nth-child(3) { border-top-color: var(--magenta); }
+ .workflow-step:nth-child(4) { border-top-color: var(--magenta); }
+ </style>
+ </head>
+
+ <body>
+
+ <div class="site-shell">
+ <header class="topbar" aria-label="Site navigation">
+ <a class="brand-mark" href="/">Kamilla Gafurzianova, OLY</a>
+ <nav>
+ <a href="/portfolio/">Back to Portfolio</a>
+</nav>
+ </header>
+
+ <main>
+ <section class="hero">
+ <div class="hero-inner">
+ <div class="eyebrow">Case Study 03 / PlayLA Flag Football Ops</div>
+ <h1>Independent delivery of a citywide operations map for the City of Los Angeles.</h1>
+ <p class="hero-copy">
+ As part of a major municipal partnership with the City of Los Angeles, I independently built a <strong>sport-agnostic relational database</strong> that connected schools, parks, active sites, and field operations so PlayLA could scale to a usable system view.
+ </p>
+ <div class="tech-row" aria-label="PlayLA case-study tools">
+ <span class="chip">Airtable</span>
+ <span class="chip">Google Cloud</span>
+ <span class="chip">Mermaid.js</span>
+ <span class="chip">Vite / TypeScript</span>
+ <span class="chip">Bilingual Field App</span>
+ </div>
+ </div>
+ </section>
+
+ <section aria-labelledby="narrative-title">
+ <div class="container intro-grid">
+ <div>
+ <div class="section-kicker">Narrative</div>
+ <h2 id="narrative-title">Building citywide infrastructure independently.</h2>
+ <p class="lead-copy">
+ PlayLA expanded across Los Angeles in partnership with the City of Los Angeles, but the operating layer was still fragmented: isolated spreadsheets, site-by-site coordination, and critical details like coach certifications and school logistics living in too many places.
+ </p>
+ <p class="lead-copy">
+ Working completely independently, I designed and shipped the relational system underneath the entire program: <strong>1,520 schools</strong>, <strong>419 parks</strong>, and active sites linked into a reusable model that could surface coverage gaps, support outreach, and make citywide municipal scale visible.
+ </p>
+ </div>
+
+ <div class="metric-strip" aria-label="PlayLA impact metrics">
+ <article class="metric">
+ <p class="metric-name">Schools Mapped</p>
+ <p class="metric-value">1,520</p>
+ <p class="metric-detail">School records connected to the operating model.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">Parks Linked</p>
+ <p class="metric-value green">419</p>
+ <p class="metric-detail">Recreation and park locations mapped across LA.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">Active Sites</p>
+ <p class="metric-value cyan">15</p>
+ <p class="metric-detail">Program sites moved into one scalable view.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">Field App Languages</p>
+ <p class="metric-value green">2</p>
+ <p class="metric-detail">English and Spanish.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="proof-section" aria-labelledby="proof-title">
+ <div class="container">
+ <div class="section-kicker">Evidence</div>
+ <h2 id="proof-title">The operating system made the work visible.</h2>
+
+ <div class="proof-grid">
+ <figure class="proof-panel wide">
+ <div class="proof-media">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/geogrpaphic-mapping-playla-os_tkttok.png"
+ alt="PlayLA geographic mapping dashboard showing schools and parks connected across Los Angeles"
+ loading="lazy"
+ >
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Geographic intelligence</p>
+ <p class="proof-detail">The mapping dashboard made school, park, and site relationships visible enough to manage.</p>
+ </div>
+ <span class="proof-tag">Primary evidence</span>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel wide">
+ <div class="proof-media">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/v1776231377/ops-dashboard-playla-ops_vpq6gk.png"
+ alt="Airtable operations dashboard for PlayLA showing active locations and program tracking"
+ loading="lazy"
+ >
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Airtable operations dashboard</p>
+ <p class="proof-detail">The dashboard translated active sites, program records, and operating status into one usable view.</p>
+ </div>
+ <span class="proof-tag">Airtable build</span>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel">
+ <div class="before-state">
+ <p class="big-line">15 sites. Zero central data infrastructure.</p>
+ <p class="small-line">The honest before state was not a screenshot. It was disconnected spreadsheets, calls, and operational memory.</p>
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-detail">No before dashboard is being invented; the absence of one is the point.</p>
+ </div>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel">
+ <div class="proof-media">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1200,f_auto,q_auto:best/automated-workflow-playla-os_nwsuoa.png"
+ alt="PlayLA automated workflow diagram showing how school and site data moves through the system"
+ loading="lazy"
+ >
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Automation logic</p>
+ <p class="proof-detail">The workflow clarified how data moved from inputs to operating decisions.</p>
+ </div>
+ <span class="proof-tag">System map</span>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel">
+ <div class="tool-system-proof">
+ <p class="tool-system-title">Airtable became the operating layer.</p>
+ <div class="tool-system-grid" aria-label="Tools used in the PlayLA operating system">
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776221927/airtable-logo-square_white_bg_tile_kenell.png" alt="Airtable logo" loading="lazy">
+ <div>
+ <strong>Airtable</strong>
+ <span>Relational database</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776221950/google-cloud-logo-square_white_bg_tile_cijbwo.png" alt="Google Cloud logo" loading="lazy">
+ <div>
+ <strong>Google Cloud</strong>
+ <span>Cloud tooling</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776221977/mermaid-logo-square_white_bg_tile_vsk4wn.png" alt="Mermaid.js logo" loading="lazy">
+ <div>
+ <strong>Mermaid.js</strong>
+ <span>Workflow diagrams</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Tool stack</p>
+ <p class="proof-detail">The case uses confirmed tool assets only, keeping the operating stack clean and source-backed.</p>
+ </div>
+ <span class="proof-tag">3 tools</span>
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <section class="workflow" aria-labelledby="workflow-title">
+ <div class="container">
+ <div class="section-kicker">Workflow</div>
+ <h2 id="workflow-title">How the system changed the work.</h2>
+ <div class="workflow-map">
+ <article class="workflow-step">
+ <p class="step-number">01</p>
+ <h3 class="step-title">Fragmented growth</h3>
+ <p class="step-copy">PlayLA was expanding across sites faster than the spreadsheet layer could support.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">02</p>
+ <h3 class="step-title">Relational model</h3>
+ <p class="step-copy">Schools, parks, sites, logistics, and compliance details were structured into reusable records.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">03</p>
+ <h3 class="step-title">Coverage logic</h3>
+ <p class="step-copy">Feeder-school and recreation-center relationships made outreach gaps easier to see.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">04</p>
+ <h3 class="step-title">Public field app</h3>
+ <p class="step-copy">A bilingual, mobile-first resource supported coaches, players, referees, and parents.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="case-nav-bottom-section" aria-label="Case study navigation">
+ <div class="case-nav-bottom-card">
+ <span class="case-nav-bottom-kicker">Continue exploring</span>
+ <h2 class="case-nav-bottom-title">Keep moving through the portfolio.</h2>
+ <div class="case-nav-bottom-actions">
+ <a class="case-nav-bottom-link" href="case-study-la28-inventory-distribution.html"><span>Previous case</span><strong>LA28 Inventory Distribution</strong></a>
+ <a class="case-nav-bottom-link case-nav-bottom-all" href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a class="case-nav-bottom-link" href="case-study-playla-flag-football-webapp.html"><span>Next case</span><strong>PlayLA Flag Football Web App</strong></a>
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <section class="credential-block" aria-labelledby="credential-title">
+ <div class="credential-inner">
+ <div class="credential-label" id="credential-title">Certified Digital Expertise</div>
+
+ <div class="badges-grid" aria-label="Kamilla's digital credentials">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-admin-badge_yvrndd.webp" alt="Salesforce Certified Administrator" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-business-analyst-badge_wucuim.webp" alt="Salesforce Certified Business Analyst" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/radical-product-thinking-vision-setting_vikd9g.webp" alt="Radical Product Thinking Vision Setting" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853212/google-ai-professional-certificate_-_Copy_owyoge.webp" alt="Google AI Professional Certificate" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853202/google-ai-for-data-analysis_-_Copy_xv2ze7.webp" alt="Google AI for Data Analysis" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776847647/pmi-member-badge_tresxu.webp" alt="Project Management Institute Member" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020726/product-management-basics-certification_qandgt.webp" alt="Product Management Basics Certification" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/ai-for-product-management_w3hwni.webp" alt="AI for Product Management" loading="lazy">
+ </div>
+
+ <h2 class="discipline-title">The Discipline to Scale</h2>
+ <p class="discipline-copy">
+ I bring an <strong>Olympic athletic background</strong> to fuel the relentless discipline required to execute, a deep <strong>research background</strong> focused on hyper-targeted strategy, and the grit of the <strong>immigrant experience</strong>. I rely on hard analytics and behavioral strategy to build resilient operational systems that help businesses actually run.
+ </p>
+ </div>
+ </section>
+
+ <footer class="doc-footer-bar" aria-label="Kamilla Gafurzianova, OLY contact footer">
+ <div class="footer-identity">
+ <div class="footer-avatar">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_webp,q_auto/v1772235120/Kamilla_-_Personal_Brand_Board_3_kwhcca.webp" alt="Kamilla Gafurzianova, OLY" loading="lazy">
+ </div>
+ <div>
+ <div class="footer-kicker">Operations &amp; Systems Consultant</div>
+ <div class="footer-name">Kamilla Gafurzianova, OLY</div>
+ </div>
+ </div>
+ <nav class="footer-case-nav" aria-label="Case study navigation">
+ <a href="case-study-la28-inventory-distribution.html"><span>Previous case</span><strong>LA28 Inventory Distribution</strong></a>
+ <a href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a href="case-study-playla-flag-football-webapp.html"><span>Next case</span><strong>PlayLA Flag Football Web App</strong></a>
+ </nav>
+ <div class="footer-links">
+ <a href="https://t.me/MilaManzarek" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+ <a href="https://www.linkedin.com/in/kamilla-gafurzianova/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+ <a href="https://github.com/milamanzarek" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+ <a href="https://g.dev/kamilla" target="_blank" rel="noopener" aria-label="Google Developers"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg></a>
+ <a href="https://www.kamilla.coach/" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+ </div>
+ </footer>
+
+ <div class="doc-footer-disclaimer">
+ PlayLA Flag Football Ops case study prepared as part of Kamilla Gafurzianova, OLY's professional portfolio.
+ </div>
+ </div>
+ </body>
+</html>

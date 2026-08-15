@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="description"
+ content="LA28 inventory distribution case study by Kamilla Gafurzianova, OLY: a Smartsheet-based dashboard for tracking 1.1M in sports equipment and nearly 300K in distribution value."
+ >
+ <meta name="theme-color" content="#14141d">
+ <link rel="icon" href="favicon.svg" type="image/svg+xml">
+ <meta property="og:title" content="LA28 Inventory Distribution Case Study | Kamilla Gafurzianova, OLY">
+ <meta property="og:type" content="article">
+ <title>LA28 Inventory Distribution Case Study | Kamilla Gafurzianova, OLY</title>
+ <link rel="stylesheet" href="kg-dark.css">
+ <style>
+ /* Page-specific overrides for LA28 orange accent */
+ .hero {
+ 
+ }
+ .section-kicker { color: #e8d45c; }
+ .workflow-step { border-top-color: #e8d45c; }
+ .workflow-step:nth-child(2) { border-top-color: var(--accent); }
+ .workflow-step:nth-child(3) { border-top-color: var(--magenta); }
+ .workflow-step:nth-child(4) { border-top-color: var(--mint); }
+ /* Metric strip glass */
+ .metric-strip {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ gap: 12px;
+ }
+ .metric {
+ min-height: 142px;
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-md);
+ background: var(--surface-card);
+ 
+ 
+ padding: 18px 18px 16px;
+ }
+ .metric-name {
+ margin: 0 0 14px;
+ color: var(--fg-1);
+ font-size: 13px;
+ font-weight: 600;
+ line-height: 1.25;
+ }
+ .metric-pair {
+ display: grid;
+ grid-template-columns: repeat(2, minmax(0, 1fr));
+ align-items: stretch;
+ gap: 10px;
+ margin-bottom: 12px;
+ }
+ .metric-pair.single { grid-template-columns: 1fr; }
+ .metric-point {
+ min-width: 0;
+ border-radius: 6px;
+ background: rgba(255, 255, 255, 0.04);
+ padding: 10px 9px;
+ }
+ .metric-point.before { background: var(--rose-dim); }
+ .metric-point.after { background: var(--mint-dim); }
+ .metric-point.verified { background: rgba(167, 139, 250, 0.08); }
+ .metric-point-label {
+ display: block;
+ margin-bottom: 5px;
+ color: var(--text-muted);
+ font-size: 10px;
+ font-weight: 600;
+ line-height: 1;
+ text-transform: uppercase;
+ }
+ .metric-point-value {
+ display: block;
+ color: var(--fg-1);
+ font-size: 20px;
+ font-weight: 600;
+ line-height: 1;
+ white-space: nowrap;
+ }
+ .metric-point-value.phrase { font-size: 18px; }
+ .metric-point.before .metric-point-value { color: var(--rose); }
+ .metric-point.after .metric-point-value,
+ .metric-point.verified .metric-point-value { color: var(--mint); }
+ .metric-label {
+ color: var(--text-muted);
+ font-size: 12px;
+ font-weight: 600;
+ line-height: 1.45;
+ text-wrap: pretty;
+ }
+ /* Proof section */
+ .proof-section { background: var(--ink-1); }
+ .proof-grid { display: grid; gap: 24px; }
+ .proof-panel {
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-lg);
+ background: var(--surface-card);
+ 
+ 
+ overflow: hidden;
+ }
+ .proof-panel img { width: 100%; height: auto; }
+ .portrait-proof-image {
+ width: 100%;
+ max-height: 640px;
+ object-fit: cover;
+ object-position: center;
+ }
+ .text-proof {
+ min-height: 260px;
+ padding: 28px;
+ background: var(--surface-card);
+ }
+ .text-proof-title {
+ max-width: 520px;
+ margin: 0 0 14px;
+ color: var(--fg-1);
+ font-size: 30px;
+ font-weight: 600;
+ line-height: 1.08;
+ text-wrap: balance;
+ }
+ .text-proof-copy {
+ max-width: 560px;
+ margin: 0;
+ color: var(--text-muted);
+ font-size: 15px;
+ font-weight: 600;
+ line-height: 1.7;
+ text-wrap: pretty;
+ }
+ .tool-system-proof {
+ min-height: 260px;
+ padding: 28px;
+ background: var(--surface-card);
+ }
+ .tool-system-title {
+ margin: 0 0 18px;
+ color: var(--fg-1);
+ font-size: 26px;
+ font-weight: 600;
+ line-height: 1.1;
+ text-wrap: balance;
+ }
+ .tool-system-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+ .tool-system-card {
+ display: grid;
+ grid-template-columns: 54px minmax(0, 1fr);
+ align-items: center;
+ gap: 14px;
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-md);
+ background: rgba(255, 255, 255, 0.03);
+ padding: 11px 14px;
+ text-align: left;
+ }
+ .tool-system-card img { width: 50px; height: 50px; object-fit: contain; }
+ .tool-system-card strong, .tool-system-card span { display: block; }
+ .tool-system-card strong { color: var(--fg-1); font-size: 14px; font-weight: 600; line-height: 1.1; }
+ .tool-system-card span { color: var(--text-muted); font-size: 11px; font-weight: 600; line-height: 1.25; text-wrap: balance; }
+ .proof-caption {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) auto;
+ gap: 16px;
+ align-items: center;
+ border-top: 1px solid var(--border-subtle);
+ padding: 16px 18px;
+ }
+ .proof-title { margin: 0 0 4px; color: var(--fg-1); font-size: 15px; font-weight: 600; }
+ .proof-detail { margin: 0; color: var(--text-muted); font-size: 13px; text-wrap: pretty; }
+ .proof-tag {
+ border-radius: 4px;
+ background: var(--mint-dim);
+ padding: 7px 10px;
+ color: var(--mint);
+ font-size: 12px;
+ font-weight: 600;
+ white-space: nowrap;
+ }
+ .media-grid {
+ display: grid;
+ grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+ gap: 24px;
+ margin-top: 24px;
+ }
+ @media (max-width: 900px) {
+ .intro-grid, .media-grid { grid-template-columns: 1fr; }
+ .workflow-map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .tool-system-grid { grid-template-columns: 1fr; }
+ }
+ @media (max-width: 640px) {
+ .metric-strip, .workflow-map { grid-template-columns: 1fr; }
+ .proof-caption { grid-template-columns: 1fr; }
+ }
+ </style>
+ </head>
+
+ <body>
+
+ <div class="site-shell">
+ <header class="topbar" aria-label="Site navigation">
+ <a class="brand-mark" href="/">Kamilla Gafurzianova, OLY</a>
+ <nav>
+ <a href="/portfolio/">Back to Portfolio</a>
+</nav>
+ </header>
+
+ <main>
+ <section class="hero" aria-labelledby="case-title">
+ <div class="hero-inner">
+ <div class="eyebrow">Case Study 02 / LA28</div>
+ <h1 id="case-title">From scattered inventory to a dashboard-backed distribution system.</h1>
+ <p class="hero-copy">
+ I built a <strong>Smartsheet-based inventory dashboard</strong> to track value,
+ locations, quarterly distribution, and donation progress for sports equipment moving
+ across Los Angeles.
+ </p>
+ <div class="tech-row" aria-label="Original operating stack">
+ <span class="chip">Smartsheet Dashboard</span>
+ <span class="chip">Workday</span>
+ <span class="chip">Salesforce</span>
+ <span class="chip">Agiloft</span>
+ </div>
+ </div>
+ </section>
+
+ <section aria-labelledby="story-title">
+ <div class="container intro-grid">
+ <div>
+ <div class="section-kicker">Narrative</div>
+ <h2 id="story-title">One person, scattered assets, no central tracker.</h2>
+ <p class="lead-copy">
+ The starting point was not a messy dashboard. It was no dashboard at all: more than a
+ million dollars in sports equipment spread across Los Angeles warehouses, with inventory
+ state, value, and distribution context living in fragmented places.
+ </p>
+ <p class="lead-copy">
+ I turned that into a practical operating view using the original stack: Smartsheet,
+ Workday, Salesforce, and Agiloft. The dashboard made inventory value, donation value,
+ location notes, and distribution reports visible enough to act on.
+ </p>
+ </div>
+
+ <div class="metric-strip" aria-label="LA28 operational outcomes">
+ <div class="metric">
+ <h3 class="metric-name">Assets Tracked</h3>
+ <div class="metric-pair single">
+ <span class="metric-point verified">
+ <span class="metric-point-label">Inventory value</span>
+ <span class="metric-point-value">$1.1M</span>
+ </span>
+ </div>
+ <div class="metric-label">Total value visible in one dashboard.</div>
+ </div>
+ <div class="metric">
+ <h3 class="metric-name">Donation Value</h3>
+ <div class="metric-pair single">
+ <span class="metric-point verified">
+ <span class="metric-point-label">Distributed</span>
+ <span class="metric-point-value">$295K+</span>
+ </span>
+ </div>
+ <div class="metric-label">Nearly $300K moved to LA youth.</div>
+ </div>
+ <div class="metric">
+ <h3 class="metric-name">Operating Budget</h3>
+ <div class="metric-pair single">
+ <span class="metric-point verified">
+ <span class="metric-point-label">Extra spend</span>
+ <span class="metric-point-value">$0</span>
+ </span>
+ </div>
+ <div class="metric-label">Built with tools already in play.</div>
+ </div>
+ <div class="metric">
+ <h3 class="metric-name">Build Team</h3>
+ <div class="metric-pair single">
+ <span class="metric-point verified">
+ <span class="metric-point-label">Owner</span>
+ <span class="metric-point-value">1</span>
+ </span>
+ </div>
+ <div class="metric-label">Dashboard and logistics handled solo.</div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="proof-section" aria-labelledby="proof-title">
+ <div class="container">
+ <div class="section-kicker">Evidence</div>
+ <h2 id="proof-title">The dashboard is the receipt.</h2>
+
+ <div class="proof-grid">
+ <figure class="proof-panel">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/v1778904826/inventory-distribution-dashboard-la28-case-study_jgdmbe.webp"
+ alt="LA28 inventory distribution dashboard showing 2024 VIK status, total inventory value, donation value, quarterly distribution reports, warehouse notes, and item-level donation tracking."
+ loading="lazy"
+ >
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Inventory distribution dashboard</p>
+ <p class="proof-detail">A single view for value, location notes, distribution reports, and item-level tracking.</p>
+ </div>
+ <span class="proof-tag">$1.1M tracked</span>
+ </figcaption>
+ </figure>
+ </div>
+
+ <div class="media-grid">
+ <figure class="proof-panel">
+ <img
+ class="portrait-proof-image"
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_auto,q_auto/v1778906126/before-la28-case-study_pksows.png"
+ alt="Kamilla Gafurzianova, OLY sitting inside a cramped storage area surrounded by sports equipment boxes and inventory bins before the LA28 dashboard system existed."
+ loading="lazy"
+ >
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-detail">The work started in storage rooms and warehouse context, before the dashboard made the system visible.</p>
+ </div>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel">
+ <div class="tool-system-proof">
+ <p class="tool-system-title">Existing tools became one operating stack.</p>
+ <div class="tool-system-grid" aria-label="Tools used in the LA28 inventory distribution system">
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/smartsheet_flsxad.webp" alt="Smartsheet logo" loading="lazy">
+ <div>
+ <strong>Smartsheet</strong>
+ <span>Dashboard layer</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/workday-logo-square_white_bg_tile_xmbooe.webp" alt="Workday logo" loading="lazy">
+ <div>
+ <strong>Workday</strong>
+ <span>Operating context</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-logo-square_white_bg_tile_xp8myb.webp" alt="Salesforce logo" loading="lazy">
+ <div>
+ <strong>Salesforce</strong>
+ <span>Relationship context</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/agiloft-logo-square_white_bg_tile_1_lw6oez.webp" alt="Agiloft logo" loading="lazy">
+ <div>
+ <strong>Agiloft</strong>
+ <span>Contract context</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Operating stack</p>
+ <p class="proof-detail">The dashboard gave existing systems a shared view for inventory, value, and distribution decisions.</p>
+ </div>
+ <span class="proof-tag">4 tools</span>
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <section class="workflow" aria-labelledby="workflow-title">
+ <div class="container">
+ <div class="section-kicker">System Map</div>
+ <h2 id="workflow-title">How the inventory became actionable.</h2>
+ <div class="workflow-map" aria-label="LA28 inventory distribution workflow">
+ <div class="workflow-step">
+ <div class="workflow-num">01</div>
+ <h3 class="workflow-name">Inventory intake</h3>
+ <p class="workflow-copy">Equipment is captured with item type, quantity, location, and value context.</p>
+ </div>
+ <div class="workflow-step">
+ <div class="workflow-num">02</div>
+ <h3 class="workflow-name">Value rollup</h3>
+ <p class="workflow-copy">Inventory and donation values roll into one dashboard instead of staying scattered.</p>
+ </div>
+ <div class="workflow-step">
+ <div class="workflow-num">03</div>
+ <h3 class="workflow-name">Distribution view</h3>
+ <p class="workflow-copy">Quarterly reports turn available equipment into a coordinated plan.</p>
+ </div>
+ <div class="workflow-step">
+ <div class="workflow-num">04</div>
+ <h3 class="workflow-name">Community impact</h3>
+ <p class="workflow-copy">Youth organizations receive equipment while warehouse pressure drops.</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="case-nav-bottom-section" aria-label="Case study navigation">
+ <div class="case-nav-bottom-card">
+ <span class="case-nav-bottom-kicker">Continue exploring</span>
+ <h2 class="case-nav-bottom-title">Keep moving through the portfolio.</h2>
+ <div class="case-nav-bottom-actions">
+ 
+ <a class="case-nav-bottom-link case-nav-bottom-all" href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a class="case-nav-bottom-link" href="case-study-playla-flag-football-ops.html"><span>Next case</span><strong>PlayLA Flag Football Operations</strong></a>
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <section class="credential-block" aria-labelledby="credential-title">
+ <div class="credential-inner">
+ <div class="credential-label" id="credential-title">Certified Digital Expertise</div>
+
+ <div class="badges-grid" aria-label="Kamilla's digital credentials">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-admin-badge_yvrndd.webp" alt="Salesforce Certified Administrator" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-business-analyst-badge_wucuim.webp" alt="Salesforce Certified Business Analyst" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/radical-product-thinking-vision-setting_vikd9g.webp" alt="Radical Product Thinking Vision Setting" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853212/google-ai-professional-certificate_-_Copy_owyoge.webp" alt="Google AI Professional Certificate" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853202/google-ai-for-data-analysis_-_Copy_xv2ze7.webp" alt="Google AI for Data Analysis" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776847647/pmi-member-badge_tresxu.webp" alt="Project Management Institute Member" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020726/product-management-basics-certification_qandgt.webp" alt="Product Management Basics Certification" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/ai-for-product-management_w3hwni.webp" alt="AI for Product Management" loading="lazy">
+ </div>
+
+ <h2 class="discipline-title">The Discipline to Scale</h2>
+ <p class="discipline-copy">
+ I bring an <strong>Olympic athletic background</strong> to fuel the relentless discipline required
+ to execute, a deep <strong>research background</strong> focused on hyper-targeted strategy, and
+ the grit of the <strong>immigrant experience</strong>. I rely on hard analytics and behavioral
+ strategy to build resilient operational systems that help businesses actually run.
+ </p>
+ </div>
+ </section>
+
+ <footer class="doc-footer-bar" aria-label="Kamilla Gafurzianova, OLY contact footer">
+ <div class="footer-identity">
+ <div class="footer-avatar">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_webp,q_auto/v1772235120/Kamilla_-_Personal_Brand_Board_3_kwhcca.webp" alt="Kamilla Gafurzianova, OLY" loading="lazy">
+ </div>
+ <div>
+ <div class="footer-kicker">Operations &amp; Systems Consultant</div>
+ <div class="footer-name">Kamilla Gafurzianova, OLY</div>
+ </div>
+ </div>
+ <nav class="footer-case-nav" aria-label="Case study navigation">
+ 
+ <a href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a href="case-study-playla-flag-football-ops.html"><span>Next case</span><strong>PlayLA Flag Football Operations</strong></a>
+ </nav>
+ <div class="footer-links">
+ <a href="https://t.me/MilaManzarek" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+ <a href="https://www.linkedin.com/in/kamilla-gafurzianova/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+ <a href="https://github.com/milamanzarek" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+ <a href="https://g.dev/kamilla" target="_blank" rel="noopener" aria-label="Google Developers"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg></a>
+ <a href="https://www.kamilla.coach/" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+ </div>
+ </footer>
+
+ <div class="doc-footer-disclaimer">
+ LA28 Inventory Distribution case study prepared as part of Kamilla Gafurzianova, OLY's professional portfolio.
+ </div>
+ </div>
+ </body>
+</html>

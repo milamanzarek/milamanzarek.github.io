@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="description"
+ content="PlayLA Flag Football Public Webapp case study by Kamilla Gafurzianova, OLY: mobile-first bilingual resource portal, location data reuse, parent logistics, and community trust."
+ >
+ <meta name="theme-color" content="#14141d">
+ <link rel="icon" href="favicon.svg" type="image/svg+xml">
+ <meta property="og:title" content="PlayLA Flag Football Public Webapp | Kamilla Gafurzianova, OLY">
+ <meta property="og:type" content="article">
+ <title>PlayLA Flag Football Public Webapp | Kamilla Gafurzianova, OLY</title>
+ <link rel="stylesheet" href="kg-dark.css">
+ <style>
+ /* Page-specific overrides for PlayLA Webapp */
+ .hero {
+ 
+ }
+ .section-kicker { color: var(--mint); }
+ .workflow-step { border-top-color: var(--mint); }
+ .workflow-step:nth-child(2) { border-top-color: var(--accent); }
+ .workflow-step:nth-child(3) { border-top-color: var(--magenta); }
+ .workflow-step:nth-child(4) { border-top-color: var(--magenta); }
+ </style>
+ </head>
+
+ <body>
+
+ <div class="site-shell">
+ <header class="topbar" aria-label="Site navigation">
+ <a class="brand-mark" href="/">Kamilla Gafurzianova, OLY</a>
+ <nav>
+ <a href="/portfolio/">Back to Portfolio</a>
+</nav>
+ </header>
+
+ <main>
+ <section class="hero">
+ <div class="hero-inner">
+ <div class="eyebrow">Case Study 07 / PlayLA Public Webapp</div>
+ <h1>Bilingual municipal public webapp shipped independently for the City of Los Angeles.</h1>
+ <p class="hero-copy">
+ In partnership with the City of Los Angeles, I independently built and shipped a <strong>mobile-first public resource</strong> that reused the database foundation to surface active program locations with direct Google Maps directions loaded for families.
+ </p>
+ <div class="tech-row" aria-label="PlayLA case-study focus areas">
+ <span class="chip">Public Resource Portal</span>
+ <span class="chip">Location Data Reuse</span>
+ <span class="chip">Parent Logistics</span>
+ <span class="chip">Bilingual UX</span>
+ <span class="chip">Community Trust</span>
+ <span class="chip">Mobile-First Build</span>
+ </div>
+ </div>
+ </section>
+
+ <section aria-labelledby="narrative-title">
+ <div class="container intro-grid">
+ <div>
+ <div class="section-kicker">Narrative</div>
+ <h2 id="narrative-title">One data foundation, multiple jobs.</h2>
+ <p class="lead-copy">
+ In the operations phase of this municipal program for the City of Los Angeles, I built the underlying location data model. Working completely independently, I reused that structured foundation of 1,700+ mapped facilities to design, develop, and ship a bilingual public webapp for local families.
+ </p>
+ <p class="lead-copy">
+ The public webapp turns this database into location search, interactive program cards, rules, parent guidelines, equipment lists, and emergency resources. To make the interface highly actionable, I did not just list static address strings. Clicking the program card launches Google Maps with active directions to the specific recreation center already loaded, reducing parent coordination friction to a single tap.
+ </p>
+ </div>
+
+ <div class="metric-strip" aria-label="PlayLA case snapshot">
+ <article class="metric">
+ <p class="metric-name">Audience Need</p>
+ <p class="metric-value phrase">Parents needed clarity</p>
+ <p class="metric-detail">Find active locations, directions, and resource pages without digging.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">What I Built</p>
+ <p class="metric-value phrase">Bilingual resource portal</p>
+ <p class="metric-detail">Location search, program cards, guidance, equipment, game-day, and partners.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">Leverage Move</p>
+ <p class="metric-value phrase">Ops data reused</p>
+ <p class="metric-detail">PlayLA Flag Football Ops became reusable infrastructure for the webapp.</p>
+ </article>
+ <article class="metric">
+ <p class="metric-name">Value Created</p>
+ <p class="metric-value green">15</p>
+ <p class="metric-detail">Active program locations surfaced with directions already loaded.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="evidence-section" aria-labelledby="evidence-title">
+ <div class="container">
+ <div class="section-kicker">What Shipped</div>
+ <h2 id="evidence-title">Reusable infrastructure, visible in the interface.</h2>
+
+ <div class="evidence-grid">
+ <figure class="evidence-panel wide">
+ <div class="evidence-media">
+ <a href="https://res.cloudinary.com/dp9lnazkj/image/upload/f_auto,q_auto/playla-flagfootball-json-and-frontend-side-by-side_p6tzsk" target="_blank" rel="noopener" aria-label="Open full-size database to public program card work sample image">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_auto,q_auto/playla-flagfootball-json-and-frontend-side-by-side_p6tzsk"
+ alt="Side-by-side view showing the Westwood Recreation Center database record with latitude and longitude beside the public PlayLA Find a Program card."
+ loading="eager"
+ decoding="async"
+ >
+ </a>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Database record to public program card</p>
+ <p class="evidence-detail">The left side shows the Westwood Recreation Center record from the 1,700+ location foundation, including address, ZIP code, and coordinates. The right side shows that same structured data surfaced as a parent-ready Find a Program result for one of the 15 active program locations.</p>
+ </div>
+ <span class="evidence-tag">Data -> UX</span>
+ </figcaption>
+ </figure>
+
+ <figure class="evidence-panel wide">
+ <div class="evidence-media">
+ <video autoplay muted loop playsinline preload="metadata" aria-label="PlayLA locations page opening Google Maps directions, not just a map link, for the Westwood location">
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/Playla-flagfootball-locations_vw34nc" type="video/webm">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Locations: directions, not just a map link</p>
+ <p class="evidence-detail">The Westwood record carries the address and coordinates. The public site turns that structured data into Google Maps directions to 1350 S Sepulveda Blvd, with the 9 minute / 3.1 mile route already loaded <strong>to save a busy parent a few clicks</strong>.</p>
+ </div>
+ <span class="evidence-tag">Directions</span>
+ </figcaption>
+ <div class="implementation-receipt" aria-label="Under the Hood code receipt for Google Maps directions">
+ <div class="receipt-chrome">
+ <span>Under the Hood</span>
+ <span class="receipt-lang" aria-label="TypeScript">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779080628/ts-logo-256_mjudvy.svg" alt="" aria-hidden="true">
+ </span>
+ </div>
+ <pre class="receipt-code"><code><span class="syntax-keyword">const</span> <span class="syntax-function">getGoogleMapsUrl</span> = (<span class="syntax-variable">location</span>) =&gt; {
+ <span class="syntax-keyword">const</span> <span class="syntax-variable">address</span> = <span class="syntax-function">encodeURIComponent</span>(
+ <span class="syntax-string">`${location.address}, ${location.city}, ${location.state} ${location.zipCode}`</span>
+ );
+
+ <span class="syntax-keyword">return</span> <span class="syntax-string">`https://www.google.com/maps/dir/?api=1&amp;destination=${address}`</span>;
+};</code></pre>
+ </div>
+ </figure>
+
+ <figure class="evidence-panel">
+ <div class="evidence-media">
+ <video autoplay muted loop playsinline preload="metadata" aria-label="PlayLA parent guide page with expectations, support guidance, and safety information">
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/playla-flagfootball-parent-guide_jtklfa" type="video/webm">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Parent Guide</p>
+ <p class="evidence-detail">The guide explains what families can expect, how to support a child, how communication works, and what game day feels like.</p>
+ </div>
+ <span class="evidence-tag">Parent trust</span>
+ </figcaption>
+ <div class="marketing-lens" aria-label="Audience strategy for parent guide trust">
+ <div class="lens-chrome">
+ <span>Audience Strategy</span>
+ <span class="lens-chip">Trust</span>
+ </div>
+ <div class="lens-body">
+ <p class="lens-copy">The parent guide turns uncertainty into confidence by answering the questions families ask before they commit time to a new program.</p>
+ <div class="lens-points">
+ <span class="lens-point">Makes the first practice feel predictable.</span>
+ <span class="lens-point">Frames logistics as care, not admin.</span>
+ </div>
+ </div>
+ </div>
+ </figure>
+
+ <figure class="evidence-panel">
+ <div class="evidence-media">
+ <video autoplay muted loop playsinline preload="metadata" aria-label="PlayLA equipment page showing English and Spanish language switching">
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/Playla-flagfootball-equipment-bilingual_cgcfov" type="video/webm">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Equipment and Bilingual Access</p>
+ <p class="evidence-detail">The equipment page makes participation feel approachable and supports families who need Spanish-language access.</p>
+ </div>
+ <span class="evidence-tag">Bilingual UX</span>
+ </figcaption>
+ <div class="implementation-receipt" aria-label="Under the Hood code receipt for language persistence">
+ <div class="receipt-chrome">
+ <span>Under the Hood</span>
+ <span class="receipt-lang" aria-label="TypeScript">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779080628/ts-logo-256_mjudvy.svg" alt="" aria-hidden="true">
+ </span>
+ </div>
+ <pre class="receipt-code"><code><span class="syntax-keyword">const</span> <span class="syntax-variable">saved</span> = <span class="syntax-variable">localStorage</span>.<span class="syntax-function">getItem</span>(<span class="syntax-string">'playla-language'</span>);
+
+<span class="syntax-variable">localStorage</span>.<span class="syntax-function">setItem</span>(<span class="syntax-string">'playla-language'</span>, <span class="syntax-variable">language</span>);</code></pre>
+ </div>
+ </figure>
+
+ <figure class="evidence-panel">
+ <div class="evidence-media">
+ <video autoplay muted loop playsinline preload="metadata" aria-label="PlayLA game-day checklist and emergency support page">
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/Playla-flagfootball-gameday-checklist-emergency_zlqmb6" type="video/webm">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Game-Day Checklist</p>
+ <p class="evidence-detail">Coach-facing support includes checklist logic, emergency information, Poison Control, LA City services, and action-plan guidance.</p>
+ </div>
+ <span class="evidence-tag">Safety</span>
+ </figcaption>
+ <div class="implementation-receipt" aria-label="Under the Hood code receipt for game-day checklist persistence">
+ <div class="receipt-chrome">
+ <span>Under the Hood</span>
+ <span class="receipt-lang" aria-label="TypeScript">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779080628/ts-logo-256_mjudvy.svg" alt="" aria-hidden="true">
+ </span>
+ </div>
+ <pre class="receipt-code"><code><span class="syntax-keyword">const</span> <span class="syntax-variable">progress</span> =
+ (<span class="syntax-variable">checkedItems</span>.<span class="syntax-variable">size</span> / <span class="syntax-variable">preGameChecklist</span>.<span class="syntax-variable">length</span>) * <span class="syntax-number">100</span>;
+
+<span class="syntax-variable">localStorage</span>.<span class="syntax-function">setItem</span>(
+ <span class="syntax-string">'playla-checklist'</span>,
+ <span class="syntax-variable">JSON</span>.<span class="syntax-function">stringify</span>(<span class="syntax-variable">Array</span>.<span class="syntax-function">from</span>(<span class="syntax-variable">checkedItems</span>))
+);</code></pre>
+ </div>
+ </figure>
+
+ <figure class="evidence-panel">
+ <div class="evidence-media">
+ <video autoplay muted loop playsinline preload="metadata" aria-label="PlayLA partners page showing the community ecosystem around the program">
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/Playla-flagfootball-partners_mh3xyj" type="video/webm">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Partner Context</p>
+ <p class="evidence-detail">The public resource names the community ecosystem around the program, including City of Los Angeles, USA Football, LA teams, LA28, Ready Set Gold, and LAUSD.</p>
+ </div>
+ <span class="evidence-tag">Ecosystem</span>
+ </figcaption>
+ <div class="marketing-lens" aria-label="Audience strategy for partner ecosystem credibility">
+ <div class="lens-chrome">
+ <span>Audience Strategy</span>
+ <span class="lens-chip">Credibility</span>
+ </div>
+ <div class="lens-body">
+ <p class="lens-copy">The partner section makes the program's support network visible, connecting the resource to civic, school, and sports institutions families already recognize.</p>
+ <div class="lens-points">
+ <span class="lens-point">Builds trust through recognizable names.</span>
+ <span class="lens-point">Leaves room for future community updates.</span>
+ </div>
+ </div>
+ </div>
+ </figure>
+
+ <figure class="evidence-panel wide">
+ <div class="tool-system-evidence">
+ <p class="tool-system-title">Build stack for a parent-ready public app.</p>
+ <div class="tool-system-grid expanded" aria-label="Tools used in the PlayLA Flag Football public webapp">
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779114888/white-almost-square-tile-641x632px_lpukmx__l_image_upload_react-plain_qnsdgp_w_600_o_100_fl_layer_apply_g_north_east_x_0.03_y_0.04_aylkfm.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>React</strong>
+ <span>Frontend interface</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779080628/ts-logo-256_mjudvy.svg" alt="TypeScript logo" loading="lazy">
+ <div>
+ <strong>TypeScript</strong>
+ <span>Application logic</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1776221982/neon-logo-square_white_bg_tile_jf1of1.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>Netlify</strong>
+ <span>Static deployment</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779094249/cloudinary-white-almost-square-tile-641x632px_lpukmx.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>Cloudinary</strong>
+ <span>Media delivery</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1776221959/google-maps-logo-square_white_bg_tile_zg5uzg.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>Google Maps</strong>
+ <span>Loaded directions</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779119322/vs-code-logo_rmam2g.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>VS Code</strong>
+ <span>Development workspace</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779119488/git-logo_bgyj1a.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>Git</strong>
+ <span>Version control</span>
+ </div>
+ </div>
+ <div class="tool-system-card">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/v1779094303/antigravity-white-almost-square-tile-641x632px_lpukmx.png" alt="" aria-hidden="true" loading="lazy">
+ <div>
+ <strong>Antigravity</strong>
+ <span>Agentic build support</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Tool stack</p>
+ <p class="evidence-detail">The stack lives here, separate from the value snapshot, so the top four tiles stay focused on why the work matters.</p>
+ </div>
+ <span class="evidence-tag">8 tools</span>
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <section class="workflow" aria-labelledby="workflow-title">
+ <div class="container">
+ <div class="section-kicker">Workflow</div>
+ <h2 id="workflow-title">How one database served multiple purposes.</h2>
+ <div class="workflow-map">
+ <article class="workflow-step">
+ <p class="step-number">01</p>
+ <h3 class="step-title">Map the city</h3>
+ <p class="step-copy">The PlayLA Flag Football Ops database structured a 1,700+ location foundation with addresses, linked schools, and geocoordinates.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">02</p>
+ <h3 class="step-title">Reuse the data</h3>
+ <p class="step-copy">The app reused that foundation to surface the 15 currently active Flag Football program locations to parents.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">03</p>
+ <h3 class="step-title">Load directions</h3>
+ <p class="step-copy">Location cards move directly into Google Maps directions so parent logistics do not depend on copy-paste, vague park names, or extra taps.</p>
+ </article>
+ <article class="workflow-step">
+ <p class="step-number">04</p>
+ <h3 class="step-title">Extend the portal</h3>
+ <p class="step-copy">The app also packaged rules, parent guidance, bilingual equipment info, emergency support, and partner context.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="case-nav-bottom-section" aria-label="Case study navigation">
+ <div class="case-nav-bottom-card">
+ <span class="case-nav-bottom-kicker">Continue exploring</span>
+ <h2 class="case-nav-bottom-title">Keep moving through the portfolio.</h2>
+ <div class="case-nav-bottom-actions">
+ <a class="case-nav-bottom-link" href="case-study-playla-flag-football-ops.html"><span>Previous case</span><strong>PlayLA Flag Football Operations</strong></a>
+ <a class="case-nav-bottom-link case-nav-bottom-all" href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a class="case-nav-bottom-link" href="case-study-usa-fencing-hof.html"><span>Next case</span><strong>USA Fencing Hall of Fame</strong></a>
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <section class="credential-block" aria-labelledby="credential-title">
+ <div class="credential-inner">
+ <div class="credential-label" id="credential-title">Certified Digital Expertise</div>
+
+ <div class="badges-grid" aria-label="Kamilla's digital credentials">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-admin-badge_yvrndd.webp" alt="Salesforce Certified Administrator" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-business-analyst-badge_wucuim.webp" alt="Salesforce Certified Business Analyst" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/radical-product-thinking-vision-setting_vikd9g.webp" alt="Radical Product Thinking Vision Setting" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853212/google-ai-professional-certificate_-_Copy_owyoge.webp" alt="Google AI Professional Certificate" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853202/google-ai-for-data-analysis_-_Copy_xv2ze7.webp" alt="Google AI for Data Analysis" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776847647/pmi-member-badge_tresxu.webp" alt="Project Management Institute Member" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020726/product-management-basics-certification_qandgt.webp" alt="Product Management Basics Certification" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/ai-for-product-management_w3hwni.webp" alt="AI for Product Management" loading="lazy">
+ </div>
+
+ <h2 class="discipline-title">The Discipline to Scale</h2>
+ <p class="discipline-copy">
+ I bring an <strong>Olympic athletic background</strong> to fuel the relentless discipline required to execute, a deep <strong>research background</strong> focused on hyper-targeted strategy, and the grit of the <strong>immigrant experience</strong>. I rely on hard analytics and behavioral strategy to build resilient operational systems that help businesses actually run.
+ </p>
+ </div>
+ </section>
+
+ <footer class="doc-footer-bar" aria-label="Kamilla Gafurzianova, OLY contact footer">
+ <div class="footer-identity">
+ <div class="footer-avatar">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_webp,q_auto/v1772235120/Kamilla_-_Personal_Brand_Board_3_kwhcca.webp" alt="Kamilla Gafurzianova, OLY" loading="lazy">
+ </div>
+ <div>
+ <div class="footer-kicker">Operations &amp; Systems Consultant</div>
+ <div class="footer-name">Kamilla Gafurzianova, OLY</div>
+ </div>
+ </div>
+ <nav class="footer-case-nav" aria-label="Case study navigation">
+ <a href="case-study-playla-flag-football-ops.html"><span>Previous case</span><strong>PlayLA Flag Football Operations</strong></a>
+ <a href="portfolio.html"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ <a href="case-study-usa-fencing-hof.html"><span>Next case</span><strong>USA Fencing Hall of Fame</strong></a>
+ </nav>
+ <div class="footer-links">
+ <a href="https://t.me/MilaManzarek" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+ <a href="https://www.linkedin.com/in/kamilla-gafurzianova/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+ <a href="https://github.com/milamanzarek" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+ <a href="https://g.dev/kamilla" target="_blank" rel="noopener" aria-label="Google Developers"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg></a>
+ <a href="https://www.kamilla.coach/" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+ </div>
+ </footer>
+
+ <div class="doc-footer-disclaimer">
+ PlayLA Flag Football Public Webapp case study prepared as part of Kamilla Gafurzianova, OLY's professional portfolio.
+ </div>
+ </div>
+ </body>
+</html>

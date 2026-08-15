@@ -19,3 +19,5 @@ The program's operations data answered internal questions, but families still ha
 * One data foundation now serving two jobs: internal operations and public access.
 
 **Stack:** Vite/TypeScript, Google Maps integration, bilingual UX.
+
+[View the full designed case study](/case-study-playla-flag-football-webapp.html)

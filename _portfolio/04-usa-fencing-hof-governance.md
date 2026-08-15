@@ -20,3 +20,5 @@ My onboarding as Chair was one sentence: "Congratulations, you inherited a mess.
 * Governance that survives committee turnover because it lives in the system, not in one person's memory.
 
 **Stack:** Neon (Postgres), Node.js pipeline, Netlify portal, Mermaid data model.
+
+[View the full designed case study](/case-study-usa-fencing-hof.html)
