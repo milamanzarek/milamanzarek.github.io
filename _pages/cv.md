@@ -20,7 +20,7 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 * For a City of Los Angeles youth sports program (PlayLA): independently designed and shipped a citywide operations database of 1,700+ mapped facilities and a bilingual public web app serving 15 active program sites.
 * For a youth tennis academy (about 80 athletes): implemented the club operations stack (CRM, scheduling, billing, parent communication); the published case study on the engagement reports over 40% less administrator scheduling time and a 23% increase in family response rates.
 * For an international sport PR agency: built the business development system (custom Airtable CRM, risk matrix, automated multilingual proposal generation), cutting proposal preparation from days to hours in a 90-day engagement.
-* Built automated CRM pipelines from zero (Zoho, Airtable) that doubled contracted business development outreach targets across enterprise and healthcare clients.
+* Built automated CRM pipelines from zero (Zoho, Airtable) that doubled contracted business development outreach goals across enterprise and healthcare clients.
 
 ### Chief Operating Officer, Ai Start Academy
 *San Francisco, CA | Sep 2025 to Feb 2026*
@@ -39,7 +39,9 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 ### Committee Chair (volunteer), USA Fencing Hall of Fame Committee
 *Oct 2024 to present*
 
-* Chair the national Hall of Fame nomination and review process; designed and built the governance system behind it: database-backed scoring rubrics, a committee review portal, and an automated ballot pipeline; delivered the quarterly board report and ran a live election cycle.
+* Chair the national Hall of Fame nomination and review process for the sport's governing body.
+* Designed and built the governance system behind it: database-backed scoring rubrics, a committee review portal, and an automated ballot pipeline.
+* Ran a live election cycle on the new system and delivered the quarterly board report on schedule.
 
 ### Earlier experience
 
@@ -49,7 +51,9 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 
 ## Olympic and Paralympic record
 
-* Olympic silver medalist, fencing (London 2012); World and European Championships silver medalist; two-time Universiade champion; Honored Master of Sport.
+* Olympic silver medalist, fencing (London 2012).
+* World Championships and European Championships silver medalist.
+* Two-time Universiade champion; Honored Master of Sport.
 * 3.5 years of volunteer parafencing development work in the US; ongoing through the LA28 Games cycle.
 * Ambassador, 2013 Summer Universiade (Kazan).
 
@@ -62,8 +66,10 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 
 ## Certifications
 
-* Salesforce Certified Administrator; Salesforce Certified Business Analyst
-* Google AI Professional Certificate; Google Cloud Digital Leader
+* Salesforce Certified Administrator
+* Salesforce Certified Business Analyst
+* Google AI Professional Certificate
+* Google Cloud Digital Leader
 
 ## Skills
 
