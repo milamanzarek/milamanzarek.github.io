@@ -27,6 +27,7 @@ Olympic silver medalist, published researcher, and program and delivery leader w
 
 * Built the company-wide operating model in one system: RACI structures, OKRs, an SOP registry, a real-time KPI dashboard, and the quarterly plan.
 * Shipped internal production tools (React, Firebase, Gemini API), including a course-and-funnel generator and an on-brand asset generator.
+* Case studies from this role: [Master operations plan](/case-study-aisa-master-ops-plan.html), [Course creation funnel](/case-study-aisa-course-funnel.html), [Asset generator app](/case-study-aisa-generator-app.html).
 
 ### LA28 Olympic & Paralympic Games
 *Los Angeles, CA | Jan 2022 to Jun 2024 (full-time, 2.5 years)*

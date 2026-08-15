@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="description"
+ content="AI Start Academy Master Operations Plan case study by Kamilla Gafurzianova, OLY: executive operating system, governance, RACI, roadmap, SOP registry, KPI dashboard, and launch readiness."
+ >
+ <meta name="theme-color" content="#14141d">
+ <link rel="icon" href="favicon.svg" type="image/svg+xml">
+ <meta property="og:title" content="AI Start Academy Master Operations Plan | Kamilla Gafurzianova, OLY">
+ <meta property="og:type" content="article">
+ <title>AI Start Academy Master Operations Plan | Kamilla Gafurzianova, OLY</title>
+ <link rel="stylesheet" href="kg-dark.css">
+ <style>
+ /* Page-specific overrides for AISA ops accent */
+ .hero {
+ 
+ }
+ .section-kicker { color: #e8d45c; }
+ .workflow-step { border-top-color: #e8d45c; }
+ .workflow-step:nth-child(2) { border-top-color: var(--accent); }
+ .workflow-step:nth-child(3) { border-top-color: var(--magenta); }
+ .workflow-step:nth-child(4) { border-top-color: var(--mint); }
+ /* Case frame rows */
+ .case-frame { display: grid; gap: 12px; }
+ .frame-row {
+ display: grid;
+ grid-template-columns: 104px minmax(0, 1fr);
+ gap: 14px;
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-md);
+ background: var(--surface-card);
+ 
+ 
+ padding: 16px;
+ }
+ .frame-label {
+ margin: 0;
+ color: #e8d45c;
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 0;
+ text-transform: uppercase;
+ }
+ .frame-copy {
+ margin: 0;
+ color: var(--text-muted);
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 1.5;
+ }
+ /* Value snapshot */
+ .value-snapshot {
+ background: var(--ink-1);
+ border-top: 1px solid var(--border-subtle);
+ border-bottom: 1px solid var(--border-subtle);
+ }
+ .snapshot-grid {
+ display: grid;
+ grid-template-columns: repeat(4, minmax(0, 1fr));
+ gap: 16px;
+ margin-top: 28px;
+ }
+ .snapshot-card {
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-md);
+ background: var(--surface-card);
+ 
+ 
+ padding: 20px;
+ }
+ .snapshot-label {
+ margin: 0 0 10px;
+ color: #e8d45c;
+ font-size: 11px;
+ font-weight: 600;
+ text-transform: uppercase;
+ }
+ .snapshot-value {
+ margin: 0 0 8px;
+ color: var(--fg-1);
+ font-size: 17px;
+ font-weight: 600;
+ line-height: 1.22;
+ text-wrap: balance;
+ }
+ .snapshot-copy {
+ margin: 0;
+ color: var(--text-muted);
+ font-size: 13px;
+ font-weight: 500;
+ line-height: 1.55;
+ }
+ /* Evidence panels */
+ .evidence-grid { display: grid; gap: 24px; margin-top: 28px; }
+ .evidence-panel {
+ overflow: hidden;
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-lg);
+ background: var(--surface-card);
+ 
+ 
+ }
+ .video-frame { position: relative; background: var(--ink-0); }
+ .video-frame video {
+ width: 100%;
+ aspect-ratio: 16 / 9;
+ background: var(--ink-0);
+ object-fit: contain;
+ }
+ .evidence-caption {
+ display: grid;
+ grid-template-columns: minmax(0, 1fr) auto;
+ gap: 16px;
+ align-items: center;
+ border-top: 1px solid var(--border-subtle);
+ padding: 18px;
+ }
+ .evidence-title {
+ margin: 0 0 4px;
+ color: var(--fg-1);
+ font-size: 15px;
+ font-weight: 600;
+ }
+ .evidence-detail {
+ margin: 0;
+ color: var(--text-muted);
+ font-size: 13px;
+ line-height: 1.55;
+ text-wrap: pretty;
+ }
+ .evidence-tag {
+ border-radius: 4px;
+ background: rgba(167, 139, 250, 0.12);
+ padding: 7px 10px;
+ color: var(--violet);
+ font-size: 12px;
+ font-weight: 600;
+ white-space: nowrap;
+ }
+ .evidence-panel.deep-dive .evidence-tag {
+ background: var(--mint-dim);
+ color: var(--mint);
+ }
+ /* Leadership system */
+ .leadership-system { background: var(--ink-1); }
+ .system-grid {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 16px;
+ margin-top: 28px;
+ }
+ .system-card {
+ min-height: 180px;
+ border: 1px solid var(--border-subtle);
+ border-top: 4px solid #e8d45c;
+ border-radius: var(--radius-md);
+ background: var(--surface-card);
+ 
+ 
+ padding: 20px;
+ }
+ .system-card:nth-child(2),
+ .system-card:nth-child(5) { border-top-color: var(--accent); }
+ .system-card:nth-child(3),
+ .system-card:nth-child(6) { border-top-color: var(--mint); }
+ .system-card h3 {
+ margin: 0 0 10px;
+ color: var(--fg-1);
+ font-size: 17px;
+ font-weight: 600;
+ line-height: 1.25;
+ text-wrap: balance;
+ }
+ .system-card p {
+ margin: 0;
+ color: var(--text-muted);
+ font-size: 13px;
+ font-weight: 500;
+ line-height: 1.55;
+ }
+ /* Tool stack */
+ .tool-stack { background: var(--ink-1); }
+ .tool-panel {
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-lg);
+ background: var(--surface-card);
+ 
+ 
+ padding: 24px;
+ }
+ .tool-grid {
+ display: grid;
+ grid-template-columns: repeat(3, minmax(0, 1fr));
+ gap: 14px;
+ margin-top: 22px;
+ }
+ .tool-card {
+ display: flex;
+ gap: 14px;
+ align-items: flex-start;
+ border: 1px solid var(--border-subtle);
+ border-radius: var(--radius-md);
+ background: rgba(255, 255, 255, 0.02);
+ padding: 16px;
+ }
+ .tool-initial {
+ display: grid;
+ width: 42px;
+ height: 42px;
+ flex: 0 0 auto;
+ place-items: center;
+ border-radius: 8px;
+ background: var(--ink-0);
+ color: var(--fg-1);
+ font-size: 12px;
+ font-weight: 600;
+ }
+ .tool-card strong {
+ display: block;
+ margin-bottom: 5px;
+ color: var(--fg-1);
+ font-size: 15px;
+ font-weight: 600;
+ line-height: 1.2;
+ }
+ .tool-card span {
+ display: block;
+ color: var(--text-muted);
+ font-size: 12px;
+ font-weight: 500;
+ line-height: 1.45;
+ }
+ @media (max-width: 900px) {
+ .snapshot-grid, .workflow-map, .tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ .system-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+ }
+ @media (max-width: 640px) {
+ .snapshot-grid, .workflow-map, .system-grid, .tool-grid { grid-template-columns: 1fr; }
+ .frame-row, .evidence-caption { grid-template-columns: 1fr; }
+ }
+ </style>
+ </head>
+
+ <body>
+
+ <div class="site-shell">
+ <header class="topbar" aria-label="Site navigation">
+ <a class="brand-mark" href="/">Kamilla Gafurzianova, OLY</a>
+ <nav>
+ <a href="/portfolio/">Back to Portfolio</a>
+</nav>
+ </header>
+
+ <main>
+ <section class="hero" aria-labelledby="case-title">
+ <div class="hero-inner">
+ <div class="eyebrow">Case Study 08 / Strategic Leadership</div>
+ <h1 id="case-title">Building the operating system before the launch.</h1>
+ <p class="hero-copy">
+ I built the <strong>AI Start Academy Master Operations Plan</strong> as a COO-level command center:
+ governance, RACI, operating cadence, OKRs, roadmap, SOP registry, KPI dashboard, and launch readiness
+ in one bootstrapped Google Sheets system.
+ </p>
+ <div class="tech-row" aria-label="Strategic operating stack">
+ <span class="chip">Executive Operations</span>
+ <span class="chip">RACI Governance</span>
+ <span class="chip">OKRs</span>
+ <span class="chip">SOP Registry</span>
+ <span class="chip">KPI Dashboard</span>
+ <span class="chip">Google Sheets OS</span>
+ </div>
+ </div>
+ </section>
+
+ <section aria-labelledby="story-title">
+ <div class="container intro-grid">
+ <div>
+ <div class="section-kicker">Narrative</div>
+ <h2 id="story-title">A strategic plan that could actually run the company.</h2>
+ <p class="lead-copy">
+ This was not a decorative strategy deck. It was a centralized operational framework for launching,
+ scaling, and managing an AI-focused education ecosystem with clear governance, timelines,
+ ownership, and performance discipline.
+ </p>
+ <p class="lead-copy">
+ Because the startup was bootstrapped, I deliberately avoided expensive enterprise tooling and built
+ the operating logic in a structured spreadsheet. The point was leadership clarity: one place where
+ executives, functional leads, and execution teams could see what matters, who owns it, and what
+ happens next.
+ </p>
+ </div>
+
+ <aside class="case-frame" aria-label="Case frame">
+ <div class="frame-row">
+ <p class="frame-label">Audience</p>
+ <p class="frame-copy">Founder team, COO/CPO/CEO functions, operations, marketing, education, IT, and delivery teams.</p>
+ </div>
+ <div class="frame-row">
+ <p class="frame-label">Artifact</p>
+ <p class="frame-copy">A master operations plan with launch phases, accountability, cadence, roadmap, SOPs, and metrics.</p>
+ </div>
+ <div class="frame-row">
+ <p class="frame-label">Method</p>
+ <p class="frame-copy">Zero-cost spreadsheet architecture, grouped execution layers, governance logic, and KPI discipline.</p>
+ </div>
+ <div class="frame-row">
+ <p class="frame-label">Signal</p>
+ <p class="frame-copy">Strategic leadership: aligning vision, people, priorities, systems, and measurable execution.</p>
+ </div>
+ </aside>
+ </div>
+ </section>
+
+ <section class="value-snapshot" aria-labelledby="snapshot-title">
+ <div class="container">
+ <div class="section-kicker">Value Snapshot</div>
+ <h2 id="snapshot-title">What this proves at leadership level.</h2>
+ <div class="snapshot-grid">
+ <article class="snapshot-card">
+ <p class="snapshot-label">Audience Need</p>
+ <p class="snapshot-value">A startup needed operational clarity.</p>
+ <p class="snapshot-copy">The academy had to connect vision, launch execution, staffing, marketing, education delivery, and metrics.</p>
+ </article>
+ <article class="snapshot-card">
+ <p class="snapshot-label">What I Built</p>
+ <p class="snapshot-value">A master operating system.</p>
+ <p class="snapshot-copy">A single source of truth for governance, phases, RACI ownership, roadmap, SOP status, and KPIs.</p>
+ </article>
+ <article class="snapshot-card">
+ <p class="snapshot-label">Leverage Move</p>
+ <p class="snapshot-value">Enterprise logic in zero-cost tooling.</p>
+ <p class="snapshot-copy">Grouped rows and structured tabs kept the plan executive-scannable while preserving execution depth.</p>
+ </article>
+ <article class="snapshot-card">
+ <p class="snapshot-label">Value Created</p>
+ <p class="snapshot-value">Launch readiness before scale.</p>
+ <p class="snapshot-copy">Legal, finance, IT, staffing, curriculum, marketing, cadence, and measurement dependencies were mapped upfront.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="proof-section" aria-labelledby="work-title">
+ <div class="container">
+ <div class="section-kicker">Work Samples</div>
+ <h2 id="work-title">The plan moves from executive map to execution depth.</h2>
+
+ <div class="evidence-grid">
+ <figure class="evidence-panel">
+ <div class="video-frame">
+ <video autoplay muted loop playsinline>
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/v1779104734/aisa-master-operations-plan-flipthrough_slrvkp.mp4" type="video/mp4">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Master Operations Plan flip-through</p>
+ <p class="evidence-detail">
+ Shows the breadth of the operating system: document architecture, onboarding, operational phases,
+ governance, mission-vision-values, SWOT, org framework, goals, marketing, roadmap, SOP registry,
+ and KPI dashboard.
+ </p>
+ </div>
+ <span class="evidence-tag">Operating System</span>
+ </figcaption>
+ </figure>
+
+ <figure class="evidence-panel deep-dive">
+ <div class="video-frame">
+ <video autoplay muted loop playsinline>
+ <source src="https://res.cloudinary.com/dp9lnazkj/video/upload/v1779104749/aisa-master-operations-plan-phase0-doubleclick_altvos.mp4" type="video/mp4">
+ </video>
+ </div>
+ <figcaption class="evidence-caption">
+ <div>
+ <p class="evidence-title">Phase 0 execution double-click</p>
+ <p class="evidence-detail">
+ Expands hidden execution layers for pre-launch work: executive foundation, financial operations,
+ IT/systems infrastructure, workspace setup, data migration, billing, approvals, and contractor
+ payment readiness.
+ </p>
+ </div>
+ <span class="evidence-tag">Execution Depth</span>
+ </figcaption>
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <section class="leadership-system" aria-labelledby="system-title">
+ <div class="container">
+ <div class="section-kicker">Leadership System</div>
+ <h2 id="system-title">The operating architecture behind the spreadsheet.</h2>
+ <div class="system-grid">
+ <article class="system-card">
+ <h3>Governance and decision rights</h3>
+ <p>RACI logic connects deliverables to CEO, CPO, COO, marketing, education, and technical functions so ownership is visible.</p>
+ </article>
+ <article class="system-card">
+ <h3>Operating rhythm</h3>
+ <p>Weekly execution reviews, monthly plan reviews, and strategic pivot-or-persevere reviews keep leadership decisions moving.</p>
+ </article>
+ <article class="system-card">
+ <h3>Launch phases</h3>
+ <p>Launch and validate, scale and optimize, then maturity: a phased progression model that keeps ambition sequenced.</p>
+ </article>
+ <article class="system-card">
+ <h3>Human capital planning</h3>
+ <p>Team growth is modeled from lean pre-launch staffing into scale-stage capacity instead of hiring from panic.</p>
+ </article>
+ <article class="system-card">
+ <h3>Roadmap and dependencies</h3>
+ <p>Q1 milestones and a companion work breakdown/Gantt view translate strategy into actual sequencing.</p>
+ </article>
+ <article class="system-card">
+ <h3>KPI and SOP discipline</h3>
+ <p>Metrics and process standardization are built into the operating model instead of bolted on after launch.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="tool-stack" aria-labelledby="tool-stack-title">
+ <div class="container">
+ <div class="section-kicker">Operating Stack</div>
+ <h2 id="tool-stack-title">The leadership disciplines inside the build.</h2>
+ <div class="tool-panel">
+ <div class="tool-grid">
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">01</div>
+ <div>
+ <strong>Google Sheets OS</strong>
+ <span>Grouped rows, structured tabs, status logic, and executive-scannable architecture.</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">02</div>
+ <div>
+ <strong>RACI Governance</strong>
+ <span>Responsible, accountable, consulted, and informed roles mapped against deliverables.</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">03</div>
+ <div>
+ <strong>OKR Translation</strong>
+ <span>Financial sustainability, community, educational excellence, and infrastructure goals.</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">04</div>
+ <div>
+ <strong>Roadmap Planning</strong>
+ <span>Q1 milestones, start/end dates, dependencies, and work breakdown visibility.</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">05</div>
+ <div>
+ <strong>SOP Registry</strong>
+ <span>Process status across HR, education, operations, and marketing.</span>
+ </div>
+ </div>
+ <div class="tool-card">
+ <div class="tool-initial" aria-hidden="true">06</div>
+ <div>
+ <strong>KPI Dashboard</strong>
+ <span>Targets, actuals, and status signals for community, users, revenue, and lead volume.</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="workflow" aria-labelledby="workflow-title">
+ <div class="container">
+ <div class="section-kicker">Workflow</div>
+ <h2 id="workflow-title">How strategic intent becomes accountable execution.</h2>
+ <div class="workflow-map" aria-label="AI Start Academy operating workflow">
+ <article class="workflow-step">
+ <div class="workflow-num">01</div>
+ <h3 class="workflow-name">Anchor the vision</h3>
+ <p class="workflow-copy">Translate mission, values, market context, and strategic identity into operating assumptions the team can use.</p>
+ </article>
+ <article class="workflow-step">
+ <div class="workflow-num">02</div>
+ <h3 class="workflow-name">Map ownership</h3>
+ <p class="workflow-copy">Define roles, decision rights, readiness states, and escalation paths before work starts to sprawl.</p>
+ </article>
+ <article class="workflow-step">
+ <div class="workflow-num">03</div>
+ <h3 class="workflow-name">Sequence the launch</h3>
+ <p class="workflow-copy">Turn pre-launch, launch, and scale work into milestones, dependencies, SOPs, and weekly execution reviews.</p>
+ </article>
+ <article class="workflow-step">
+ <div class="workflow-num">04</div>
+ <h3 class="workflow-name">Measure and adapt</h3>
+ <p class="workflow-copy">Use KPI targets, status indicators, and strategic reviews to decide what to double down on or change.</p>
+ </article>
+ </div>
+ </div>
+ </section>
+
+ <section class="case-nav-bottom-section" aria-label="Case study navigation">
+ <div class="case-nav-bottom-card">
+ <span class="case-nav-bottom-kicker">Continue exploring</span>
+ <h2 class="case-nav-bottom-title">Keep moving through the portfolio.</h2>
+ <div class="case-nav-bottom-actions">
+ <a class="case-nav-bottom-link" href="case-study-aisa-course-funnel.html"><span>Previous case</span><strong>AiSA Course Funnel</strong></a>
+ <a class="case-nav-bottom-link case-nav-bottom-all" href="/portfolio/"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ 
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <section class="credential-block" aria-labelledby="credential-title">
+ <div class="credential-inner">
+ <div class="credential-label" id="credential-title">Certified Digital Expertise</div>
+ <div class="badges-grid" aria-label="Kamilla's digital credentials">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-admin-badge_yvrndd.webp" alt="Salesforce Certified Administrator" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776874949/salesforce-business-analyst-badge_wucuim.webp" alt="Salesforce Certified Business Analyst" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/radical-product-thinking-vision-setting_vikd9g.webp" alt="Radical Product Thinking Vision Setting" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853212/google-ai-professional-certificate_-_Copy_owyoge.webp" alt="Google AI Professional Certificate" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776853202/google-ai-for-data-analysis_-_Copy_xv2ze7.webp" alt="Google AI for Data Analysis" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1776847647/pmi-member-badge_tresxu.webp" alt="Project Management Institute Member" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020726/product-management-basics-certification_qandgt.webp" alt="Product Management Basics Certification" loading="lazy">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_200,f_auto,q_auto/v1773020725/ai-for-product-management_w3hwni.webp" alt="AI for Product Management" loading="lazy">
+ </div>
+ <h2 class="discipline-title">The Discipline to Scale</h2>
+ <p class="discipline-copy">
+ I bring an <strong>Olympic athletic background</strong> to fuel the relentless discipline required to execute, a deep <strong>research background</strong> focused on hyper-targeted strategy, and the grit of the <strong>immigrant experience</strong>. I rely on hard analytics and behavioral strategy to build resilient operational systems that help businesses actually run.
+ </p>
+ </div>
+ </section>
+
+ <footer class="doc-footer-bar" aria-label="Kamilla Gafurzianova, OLY contact footer">
+ <div class="footer-identity">
+ <div class="footer-avatar">
+ <img src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_webp,q_auto/v1772235120/Kamilla_-_Personal_Brand_Board_3_kwhcca.webp" alt="Kamilla Gafurzianova, OLY" loading="lazy">
+ </div>
+ <div>
+ <div class="footer-kicker">Operations &amp; Systems Consultant</div>
+ <div class="footer-name">Kamilla Gafurzianova, OLY</div>
+ </div>
+ </div>
+ <nav class="footer-case-nav" aria-label="Case study navigation">
+ <a href="case-study-aisa-course-funnel.html"><span>Previous case</span><strong>AiSA Course Funnel</strong></a>
+ <a href="/portfolio/"><span>All case studies</span><strong>Return to portfolio index</strong></a>
+ 
+ </nav>
+ <div class="footer-links">
+ <a href="https://t.me/MilaManzarek" target="_blank" rel="noopener" aria-label="Telegram"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+ <a href="https://www.linkedin.com/in/kamilla-gafurzianova/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+ <a href="https://github.com/milamanzarek" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+ <a href="https://g.dev/kamilla" target="_blank" rel="noopener" aria-label="Google Developers"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg></a>
+ <a href="https://www.kamilla.coach/" target="_blank" rel="noopener" aria-label="Website"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+ </div>
+ </footer>
+
+ <div class="doc-footer-disclaimer">
+ AI Start Academy Master Operations Plan case study prepared as part of Kamilla Gafurzianova, OLY's professional portfolio.
+ </div>
+ </div>
+ </body>
+</html>
