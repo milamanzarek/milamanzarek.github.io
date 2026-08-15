@@ -23,13 +23,13 @@ repository               : "milamanzarek/milamanzarek.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Kamilla Gafurzianova, OLY"
   pronouns         : # example: "she/her"  
   bio              : "Project and Delivery Manager. Olympic silver medalist, fencing. Salesforce Certified Administrator and Business Analyst."
   location         : "San Francisco Bay Area, CA"
   employer         : 
-  uri              : "https://g.dev/kamilla"
+  uri              : "https://www.kamilla.coach/"
   email            : 
 
   # Academic websites
