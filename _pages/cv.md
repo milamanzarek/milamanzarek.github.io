@@ -87,6 +87,11 @@ Project and Delivery Manager with 15+ years of international program experience,
 * Salesforce Certified Business Analyst
 * Google AI Professional Certificate
 * Google Cloud Digital Leader
+* Google: AI for Data Analysis (course completion)
+* Pendo: Product Management Basics (certified)
+* Pendo x Mind the Product: AI for Product Management (course completion)
+* Pendo x Mind the Product: Radical Product Thinking, Vision Setting (course completion)
+* Member, Project Management Institute (PMI)
 
 ## Skills
 
