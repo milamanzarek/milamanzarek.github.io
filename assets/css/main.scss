@@ -37,3 +37,19 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+/* Credential badge wall: fixed 4-column grid (2 columns on small screens) */
+.badge-wall {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  align-items: center;
+  justify-items: center;
+}
+.badge-wall img {
+  width: 100%;
+  height: auto;
+  max-width: 170px;
+}
+@media (max-width: 500px) {
+  .badge-wall { grid-template-columns: repeat(2, 1fr); }
+}
