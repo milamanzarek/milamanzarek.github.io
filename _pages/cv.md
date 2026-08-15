@@ -13,14 +13,6 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 
 ## Professional experience
 
-### Coordinator (Athlete Fellow and Program Lead), LA28 Olympic & Paralympic Games
-*Los Angeles, CA | Jan 2022 to Jun 2024*
-
-* Owned LA28 Celebrates brand activations end to end across 150+ locations: strategy, budgets, planning, execution, and post-event reporting, coordinating events, partnerships, technology, and leadership teams.
-* Ran logistics for a $1M sports-equipment inventory across multiple warehouses; cut storage costs 15% and delivered $300,000 of equipment to LA youth programs in 2024 with 100% process compliance and zero inventory loss.
-* Served as one of two Salesforce Administrators for the organization: supported the CRM rollout, onboarded 120+ staff to 95% platform adoption, and authored the user documentation.
-* Synthesized requirements from school districts, city departments, and sports governing bodies into one unified logistics and compliance framework.
-
 ### Independent AI and Operations Consultant
 *San Francisco / Los Angeles, CA | 2017 to present*
 
@@ -35,6 +27,14 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 
 * Built the company-wide operating model in one system: RACI structures, OKRs, an SOP registry, a real-time KPI dashboard, and the quarterly plan.
 * Shipped internal production tools (React, Firebase, Gemini API), including a course-and-funnel generator and an on-brand asset generator.
+
+### Coordinator (Athlete Fellow and Program Lead), LA28 Olympic & Paralympic Games
+*Los Angeles, CA | Jan 2022 to Jun 2024*
+
+* Owned LA28 Celebrates brand activations end to end across 150+ locations: strategy, budgets, planning, execution, and post-event reporting, coordinating events, partnerships, technology, and leadership teams.
+* Ran logistics for a $1M sports-equipment inventory across multiple warehouses; cut storage costs 15% and delivered $300,000 of equipment to LA youth programs in 2024 with 100% process compliance and zero inventory loss.
+* Served as one of two Salesforce Administrators for the organization: supported the CRM rollout, onboarded 120+ staff to 95% platform adoption, and authored the user documentation.
+* Synthesized requirements from school districts, city departments, and sports governing bodies into one unified logistics and compliance framework.
 
 ### Committee Chair (volunteer), USA Fencing Hall of Fame Committee
 *Oct 2024 to present*
