@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Olympic medalist. Published researcher. Program and delivery leader."
+title: "Olympic medalist. Independent researcher. Program and delivery leader."
 author_profile: true
 redirect_from: 
   - /about/
