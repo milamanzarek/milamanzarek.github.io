@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Project and Delivery Manager with 15+ years of international program experience, including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee.
+Olympic silver medalist, published researcher, and program and delivery leader with 15+ years of international experience, including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee.
 
 ## Professional experience
 

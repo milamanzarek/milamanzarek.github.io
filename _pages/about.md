@@ -1,13 +1,15 @@
 ---
 permalink: /
-title: "Project and Delivery Manager for complex, cross-functional programs"
+title: "Olympic medalist. Published researcher. Program and delivery leader."
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a Project and Delivery Manager with 15+ years of international program experience, including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee. I manage programs where the stakeholders are many, the logistics are physical, the software is real, and the deadline does not move.
+I am an Olympic silver medalist and a program leader with 15+ years of international experience at the intersection of sport, technology, and education. I have operated inside one of the most complex delivery environments in the world, the LA28 Olympic and Paralympic Games organizing committee, built and run businesses of my own, advised organizations from a City of Los Angeles program to national governing bodies, and presented my research at international conferences: three published papers on AI, VR, and AR in sport, one click away on this site.
+
+I design and run complex programs involving distributed teams, high-stakes execution, and real-world constraints, translating strategic intent into operations people can actually execute. That is the work I choose: leadership measured in delivered outcomes.
 
 What that has looked like in practice:
 
