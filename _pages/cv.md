@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Games organizing committee (LA28) and 9 years of client-facing systems delivery. US citizen; remote-ready.
+Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Games organizing committee (LA28) and 9 years of client-facing systems delivery.
 
 ## Professional experience
 
