@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Games organizing committee (LA28) and 9 years of client-facing systems delivery.
+Project and Delivery Manager with 15+ years of international program experience, including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee.
 
 ## Professional experience
 
@@ -28,14 +28,21 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 * Built the company-wide operating model in one system: RACI structures, OKRs, an SOP registry, a real-time KPI dashboard, and the quarterly plan.
 * Shipped internal production tools (React, Firebase, Gemini API), including a course-and-funnel generator and an on-brand asset generator.
 
-### Coordinator (Athlete Fellow and Program Lead), LA28 Olympic & Paralympic Games
-*Los Angeles, CA | Jan 2022 to Jun 2024*
+### LA28 Olympic & Paralympic Games
+*Los Angeles, CA | Jan 2022 to Jun 2024 (full-time, 2.5 years)*
 
-* Owned LA28 Celebrates activations end to end with LA pro sports teams and community and cultural organizations: strategy, budgets, planning, execution, and post-event reporting.
-* Identified and stood up a cost-effective brand activation across 150+ locations, deepening local-government and partner relationships.
-* Ran logistics for a $1M sports-equipment inventory across multiple warehouses; cut storage costs 15% and delivered $300,000 of equipment to LA youth programs in 2024 with 100% process compliance and zero inventory loss.
-* Served as one of two Salesforce Administrators for the organization: supported the CRM rollout, onboarded 120+ staff to 95% platform adoption, and authored the user documentation.
-* Synthesized requirements from school districts, city departments, and sports governing bodies into one unified logistics and compliance framework.
+**Coordinator (Dec 2022 to Jun 2024)**
+
+* Owned LA28 Celebrates events end to end with LA pro sports teams and community and cultural organizations: budgets, event planning, execution, and post-event reporting.
+* Identified a cost-effective brand activation opportunity at over 150 locations, strengthening relationships with local government stakeholders.
+* Oversaw logistics for a $1M sports-equipment inventory, optimizing storage and reducing costs by 15%; delivered $300,000 of sports equipment to LA youth programs in 2024.
+* Project Manager, Accreditation Process Development for the 2024 Olympic and Paralympic Games: worked with cybersecurity and technology teams on a secure, standards-compliant accreditation application process; streamlined the workflow and coordinated cross-functional teams to deadline.
+* Project Manager, Travel Policy and Briefing Book Development for the 2024 Olympic and Paralympic Games: managed delegation travel policy implementation and briefing book production.
+
+**Athlete Fellowship (Jan 2022 to Dec 2022)**
+
+* Served as one of two Salesforce Administrators for the organization: supported implementation, facilitated user onboarding and adoption, and authored user documentation, including integrations with Outlook and Slack.
+* Consolidated Paralympic ticket pricing across three Games editions (London 2012, Rio 2016, Tokyo 2020) to inform the LA28 Paralympic ticketing model; contributed to a transportation hub capacity data model for the 2028 Games.
 
 ### Committee Chair (volunteer), USA Fencing Hall of Fame Committee
 *Oct 2024 to present*
@@ -44,11 +51,20 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 * Designed and built the governance system behind it: database-backed scoring rubrics, a committee review portal, and an automated ballot pipeline.
 * Ran a live election cycle on the new system and delivered the quarterly board report on schedule.
 
+### Foil Coach, Massialas Foundation (M Team)
+*San Francisco Bay Area | Sep 2017 to Jan 2022*
+
+* Coached competitive foil athletes across age groups, concurrent with the independent consulting practice.
+
 ### Earlier experience
 
-* Head Coach, Foil Program, Fencers Club Inc. (NY), 2016 to 2017: ran a 30+ athlete program on a $60K budget; grew retention 15%; parent newsletter held a 70% open rate.
-* Marketing Consultant, ALGA Sportswear, 2018 to 2020: led the brand's first US market entry, including compliance and go-to-market planning.
-* Co-Founder, Fence Fit Center (NY), 2014 to 2017: built and operated a fencing training business end to end.
+* Marketing Consultant, Fencing Robotics (VR fencing product), remote contract, Jul 2020 to Aug 2021: marketing strategy, market research, and content for a virtual reality fencing solution.
+* Marketing Consultant (International Markets), ALGA Sportswear, Sep 2018 to Mar 2020: led the brand's first US market entry, including compliance, localization, and distribution coordination.
+* Head Coach, Foil Program, Fencers Club Inc. (NY), Jun 2016 to Feb 2017: 30+ athlete program on a $60K budget; 1,000+ individual sessions; 15% retention increase; 70% newsletter open rate.
+* Yoga Coach, Columbia University varsity fencing, Feb 2016 to Feb 2017: coached 25+ athletes; the team won 2 consecutive NCAA championships.
+* Co-Founder, Fence Fit Center (NY), Feb 2014 to Feb 2017: built and operated the training business end to end, through an orderly dissolution.
+* Assistant Coach, Fencers Club Inc. (NY), Jan 2014 to Jun 2016: traveled internationally as a designated coach for U17 Team USA.
+* Ambassador, 2013 Summer Universiade (Kazan), Jul 2011 to Dec 2013: protocol, media relations, and athlete hospitality for a major international multi-sport event.
 
 ## Olympic and Paralympic record
 
@@ -60,10 +76,10 @@ Project and Delivery Manager with 2.5 years inside an Olympic and Paralympic Gam
 
 ## Education
 
-* Master of Sports Administration, Russian International Olympic University (2021 to 2022)
-* PhD candidate (ABD), Management, Moscow State University of Transport
-* Master and Bachelor, Sports Management, Moscow State University of Transport
-* Master of Physical Education, Volga Region State University
+* Master of Sports Administration, Russian International Olympic University (2021 to 2022). Thesis: virtual reality and fencing, an experimental design of attitudes. Winner of the Olympic Scholarships Competition.
+* Master of Physical Education, Volga Region State University of Physical Culture, Sport and Tourism (2015 to 2018)
+* PhD candidate (ABD), Management in Social and Economic Systems, Moscow State University of Transport (2011 to 2014)
+* Bachelor and Master, Sports Management, Moscow State University of Transport (2005 to 2011)
 
 ## Certifications
 
