@@ -115,8 +115,7 @@
  letter-spacing: 0.08em;
  text-transform: uppercase;
  }
- .ba-chip.after { background: var(--mint-dim); border-color: transparent; color: var(--mint); }
- .ba-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+ .media-grid.ba-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
  .ba-panel { display: flex; flex-direction: column; }
  .ba-media { position: relative; aspect-ratio: 4 / 5; }
  .ba-media img {
@@ -215,7 +214,7 @@
  margin-top: 24px;
  }
  @media (max-width: 900px) {
- .intro-grid, .media-grid { grid-template-columns: 1fr; }
+ .intro-grid, .media-grid, .media-grid.ba-grid { grid-template-columns: 1fr; }
  .workflow-map { grid-template-columns: repeat(2, minmax(0, 1fr)); }
  .tool-system-grid { grid-template-columns: 1fr; }
  }
