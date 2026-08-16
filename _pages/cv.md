@@ -29,10 +29,8 @@ Olympic silver medalist, independent researcher, and leader in program delivery 
 * Shipped internal production tools (React, Firebase, Gemini API), including a course-and-funnel generator and an on-brand asset generator.
 * Case studies from this role: [Master operations plan](/case-study-aisa-master-ops-plan.html), [Course creation funnel](/case-study-aisa-course-funnel.html), [Asset generator app](/case-study-aisa-generator-app.html).
 
-### LA28 Olympic & Paralympic Games
-*Los Angeles, CA | Jan 2022 to Jun 2024 (full-time, 2.5 years)*
-
-**Coordinator (Dec 2022 to Jun 2024)**
+### Coordinator, LA28 Olympic & Paralympic Games
+*Los Angeles, CA | Dec 2022 to Jun 2024*
 
 * Owned LA28 Celebrates events end to end with LA pro sports teams and community and cultural organizations: budgets, event planning, execution, and post-event reporting.
 * Identified a cost-effective brand activation opportunity at over 150 locations, strengthening relationships with local government stakeholders.
@@ -40,7 +38,8 @@ Olympic silver medalist, independent researcher, and leader in program delivery 
 * Project Manager, Accreditation Process Development for the 2024 Olympic and Paralympic Games: worked with cybersecurity and technology teams on a secure, standards-compliant accreditation application process; streamlined the workflow and coordinated cross-functional teams to deadline.
 * Project Manager, Travel Policy and Briefing Book Development for the 2024 Olympic and Paralympic Games: managed delegation travel policy implementation and briefing book production.
 
-**Athlete Fellowship (Jan 2022 to Dec 2022)**
+### Athlete Fellow, LA28 Olympic & Paralympic Games
+*Los Angeles, CA | Jan 2022 to Dec 2022*
 
 * Served as one of two Salesforce Administrators for the organization: supported implementation, facilitated user onboarding and adoption for 180 users, and authored user documentation, including integrations with Outlook and Slack.
 * Consolidated Paralympic ticket pricing across three Games editions (London 2012, Rio 2016, Tokyo 2020) to inform the LA28 Paralympic ticketing model; contributed to a transportation hub capacity data model for the 2028 Games.
