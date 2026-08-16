@@ -94,6 +94,9 @@ Olympic silver medalist, independent researcher, and leader in program delivery 
 * Pendo: Product Management Basics (certified)
 * Pendo x Mind the Product: AI for Product Management (course completion)
 * Pendo x Mind the Product: Radical Product Thinking, Vision Setting (course completion)
+* LinkedIn Learning: Leveraging Generative AI for Project Management
+* FEMA: Incident Command System (ICS)
+* CDSE: Cybersecurity Awareness; Identifying and Safeguarding PII
 * Member, Project Management Institute (PMI)
 
 ## Skills
