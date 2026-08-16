@@ -48,7 +48,7 @@
 .badge-wall img {
   width: 100%;
   height: auto;
-  max-width: 170px;
+  max-width: 115px;
 }
 @media (max-width: 500px) {
   .badge-wall { grid-template-columns: repeat(2, 1fr); }
