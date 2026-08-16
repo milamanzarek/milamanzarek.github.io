@@ -19,6 +19,9 @@
  
  }
  .section-kicker { color: var(--mint); }
+ .tool-system-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+ @media (max-width: 900px) { .tool-system-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+ @media (max-width: 640px) { .tool-system-grid { grid-template-columns: 1fr; } }
  .workflow-step { border-top-color: var(--mint); }
  .workflow-step:nth-child(2) { border-top-color: var(--accent); }
  .workflow-step:nth-child(3) { border-top-color: var(--magenta); }
@@ -48,7 +51,6 @@
  <span class="chip">Airtable</span>
  <span class="chip">Google Cloud</span>
  <span class="chip">Mermaid.js</span>
- <span class="chip">Vite / TypeScript</span>
  <span class="chip">Bilingual Field App</span>
  </div>
  </div>
@@ -149,7 +151,7 @@
  </figcaption>
  </figure>
 
- <figure class="proof-panel panel-flex">
+ <figure class="proof-panel wide">
  <div class="before-state">
  <p class="big-line">15 sites. Zero central data infrastructure.</p>
  <p class="small-line">The honest before state was not a screenshot. It was disconnected spreadsheets, calls, and operational memory.</p>
@@ -161,7 +163,7 @@
  </figcaption>
  </figure>
 
- <figure class="proof-panel panel-flex">
+ <figure class="proof-panel wide">
  <div class="tool-system-proof">
  <p class="tool-system-title">Airtable became the operating layer.</p>
  <div class="tool-system-grid" aria-label="Tools used in the PlayLA operating system">
