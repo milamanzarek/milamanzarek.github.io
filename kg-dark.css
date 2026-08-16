@@ -1022,6 +1022,14 @@ div.tool-stack {
   transition: border-color var(--dur-base) var(--ease-calm);
 }
 .proof-panel:hover { border-color: var(--border-strong); }
+.proof-panel.wide { grid-column: 1 / -1; }
+.proof-grid > .proof-panel:not(.wide) { display: flex; flex-direction: column; }
+.proof-grid > .proof-panel:not(.wide) > .proof-media { flex: 1 1 auto; min-height: 0; display: grid; place-items: center; background: var(--surface-raised); }
+.proof-grid > .proof-panel:not(.wide) > .proof-media > img { width: 100%; height: 100%; object-fit: contain; }
+.proof-panel.panel-flex { display: flex; flex-direction: column; }
+.proof-panel.panel-flex > .before-state,
+.proof-panel.panel-flex > .tool-system-proof { flex: 1 1 auto; }
+.proof-panel.panel-flex > .before-state { display: flex; flex-direction: column; justify-content: center; }
 .proof-panel img { display: block; width: 100%; height: auto; }
 .proof-caption {
   display: grid;
