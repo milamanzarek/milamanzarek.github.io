@@ -19,6 +19,9 @@
  
  }
  .section-kicker { color: var(--magenta); }
+ .tool-system-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+ @media (max-width: 900px) { .tool-system-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+ @media (max-width: 640px) { .tool-system-grid { grid-template-columns: 1fr; } }
  .workflow-step { border-top-color: var(--magenta); }
  .workflow-step:nth-child(2) { border-top-color: var(--accent); }
  .workflow-step:nth-child(3) { border-top-color: var(--violet); }
@@ -101,7 +104,24 @@
  <figure class="proof-panel wide">
  <div class="proof-media">
  <img
- src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/automated-proposal-generator-pr-agency-case_mwbccl.png"
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/risk-assessment-audit-pr-agency-case_vh8p15.png"
+ alt="Risk assessment audit for international sport PR agency outreach"
+ loading="lazy"
+ >
+ </div>
+ <figcaption class="proof-caption">
+ <div>
+ <p class="proof-title">Risk &amp; Vulnerability Matrix</p>
+ <p class="proof-detail">A custom Risk &amp; Vulnerability Matrix was built to semi-automate human risk reviews before outreach moved forward.</p>
+ </div>
+ <span class="proof-tag">Primary evidence</span>
+ </figcaption>
+ </figure>
+
+ <figure class="proof-panel">
+ <div class="proof-media">
+ <img
+ src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1200,f_auto,q_auto:best/automated-proposal-generator-pr-agency-case_mwbccl.png"
  alt="Automated proposal generator for a global sport PR agency"
  loading="lazy"
  >
@@ -111,7 +131,6 @@
  <p class="proof-title">Automated proposal generator</p>
  <p class="proof-detail">The build compressed manual proposal preparation into a repeatable generation flow.</p>
  </div>
- <span class="proof-tag">Primary evidence</span>
  </figcaption>
  </figure>
 
@@ -131,23 +150,7 @@
  </figcaption>
  </figure>
 
- <figure class="proof-panel">
- <div class="proof-media">
- <img
- src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1200,f_auto,q_auto:best/risk-assessment-audit-pr-agency-case_vh8p15.png"
- alt="Risk assessment audit for international sport PR agency outreach"
- loading="lazy"
- >
- </div>
- <figcaption class="proof-caption">
- <div>
- <p class="proof-title">Risk &amp; Vulnerability Matrix</p>
- <p class="proof-detail">A custom Risk &amp; Vulnerability Matrix was built to semi-automate human risk reviews before outreach moved forward.</p>
- </div>
- </figcaption>
- </figure>
-
- <figure class="proof-panel panel-flex">
+ <figure class="proof-panel wide">
  <div class="before-state">
  <p class="big-line">Opportunity was not the bottleneck. Infrastructure was.</p>
  <p class="small-line">The before state was fragmented tracking, informal qualification, and knowledge locked inside people.</p>
@@ -159,7 +162,7 @@
  </figcaption>
  </figure>
 
- <figure class="proof-panel panel-flex">
+ <figure class="proof-panel wide">
  <div class="tool-system-proof">
  <p class="tool-system-title">Automation stack for relationship scale.</p>
  <div class="tool-system-grid" aria-label="Tools used in the PR agency BizOps system">
