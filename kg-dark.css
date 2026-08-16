@@ -1250,3 +1250,13 @@ div.tool-stack {
   .portfolio-grid, .engagement-grid, .tool-system-grid { grid-template-columns: 1fr; }
   .proof-caption { grid-template-columns: 1fr; }
 }
+
+/* ---- Orphan-word prevention (site rule): balance headings, tidy titles ---- */
+h1, h2, h3,
+.big-line,
+.tool-system-title,
+.text-proof-title,
+.proof-title,
+.evidence-title {
+  text-wrap: balance;
+}
