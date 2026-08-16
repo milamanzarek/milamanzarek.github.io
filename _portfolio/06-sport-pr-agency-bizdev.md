@@ -19,3 +19,5 @@ A global sport PR agency had opportunity, relationships, and credibility, but th
 * Business development knowledge moved out of individual memory into a system the whole agency operates.
 
 **Stack:** Airtable CRM, workflow automation, iPhone Shortcuts, proposal automation.
+
+[View the full designed case study](/case-study-pr-agency-bizops.html)
