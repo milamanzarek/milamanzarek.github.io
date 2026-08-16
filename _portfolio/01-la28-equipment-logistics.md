@@ -6,7 +6,7 @@ collection: portfolio
 
 ## The challenge
 
-More than a million dollars of sports equipment sat scattered across Los Angeles warehouses with no central tracker: inventory state, value, and distribution context lived in fragmented places. In parallel, I owned LA28 Celebrates activations end to end and identified a cost-effective brand activation model that reached 150+ locations.
+More than a million dollars of sports equipment sat scattered across Los Angeles warehouses with no central tracker: inventory state, value, and distribution context lived in fragmented places. In parallel, I owned LA28 Celebrates activations end to end and identified a cost-effective brand activation opportunity at over 150 locations.
 
 ## What I did
 
@@ -18,7 +18,7 @@ More than a million dollars of sports equipment sat scattered across Los Angeles
 
 * 15% storage cost reduction on the equipment program.
 * $300,000 of equipment delivered to LA youth programs in 2024.
-* A cost-effective brand activation stood up across 150+ locations, deepening local-government and partner relationships.
+* A cost-effective brand activation opportunity identified at over 150 locations, deepening local-government and partner relationships.
 
 **Stack:** Smartsheet, Workday, Salesforce, Agiloft.
 
