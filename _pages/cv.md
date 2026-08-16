@@ -100,5 +100,5 @@ Olympic silver medalist, independent researcher, and leader in program delivery 
 
 * Delivery and PM: end-to-end program ownership, budget management, vendor logistics, milestone planning, post-event reporting
 * Platforms: Salesforce (Sales Cloud), Smartsheet, Airtable, Asana, Notion, Jira
-* Automation and cloud: n8n, Apps Script, GCP Cloud Run, Firebase, React/TypeScript
+* Automation and cloud: n8n, Apps Script, GCP Cloud Run, Firebase
 * Languages: English (fluent), Russian (native), Tatar (native)
