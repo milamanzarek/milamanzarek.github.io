@@ -1253,6 +1253,8 @@ div.tool-stack {
 
 /* ---- Orphan-word prevention (site rule): balance headings, tidy titles ---- */
 h1, h2, h3,
+.hero h1,
+main section h2,
 .big-line,
 .tool-system-title,
 .text-proof-title,
