@@ -116,6 +116,21 @@
  text-transform: uppercase;
  }
  .ba-chip.after { background: var(--mint-dim); border-color: transparent; color: var(--mint); }
+ .ba-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+ .ba-panel { display: flex; flex-direction: column; }
+ .ba-media { position: relative; flex: 1 1 auto; min-height: 320px; }
+ .ba-media img {
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ object-position: center;
+ }
+ .ba-panel .proof-caption { flex: 0 0 auto; }
+ @media (max-width: 900px) {
+ .ba-media { flex: none; aspect-ratio: 4 / 3; min-height: 0; }
+ }
  .proof-panel img { width: 100%; height: auto; }
  .portrait-proof-image {
  width: 100%;
@@ -308,15 +323,16 @@
  <div class="section-kicker">The work</div>
  <h2 id="proof-title">Before and after.</h2>
 
- <div class="media-grid">
- <figure class="proof-panel">
+ <div class="media-grid ba-grid">
+ <figure class="proof-panel ba-panel">
  <span class="ba-chip">Before</span>
+ <div class="ba-media">
  <img
- class="portrait-proof-image"
  src="https://res.cloudinary.com/dp9lnazkj/image/upload/f_auto,q_auto/v1778906126/before-la28-case-study_pksows.png"
  alt="Kamilla Gafurzianova, OLY sitting inside a cramped storage area surrounded by sports equipment boxes and inventory bins before the LA28 dashboard system existed."
  loading="lazy"
  >
+ </div>
  <figcaption class="proof-caption">
  <div>
  <p class="proof-title">The storage room</p>
@@ -325,7 +341,7 @@
  </figcaption>
  </figure>
 
- <figure class="proof-panel">
+ <figure class="proof-panel ba-panel">
  <span class="ba-chip after">After</span>
  <img
  src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/inventory-distribution-dashboard-la28-case-study_jgdmbe.webp"
