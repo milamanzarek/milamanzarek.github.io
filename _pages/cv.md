@@ -76,7 +76,7 @@ Olympic silver medalist, independent researcher, and leader in program delivery 
 
 ## Education
 
-* Master of Sports Administration, Russian International Olympic University (2021 to 2022). Thesis: virtual reality and fencing, an experimental design of attitudes. Winner of the Olympic Scholarships Competition.
+* Master of Sports Administration, Russian International Olympic University (2021 to 2022)
 * Master of Physical Education, Volga Region State University of Physical Culture, Sport and Tourism (2015 to 2018)
 * PhD candidate (ABD), Management in Social and Economic Systems, Moscow State University of Transport (2011 to 2014)
 * Bachelor and Master, Sports Management, Moscow State University of Transport (2005 to 2011)
