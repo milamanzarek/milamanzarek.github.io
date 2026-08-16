@@ -22,7 +22,7 @@ Explore the [case portfolio](/portfolio/), the [publications](/publications/), o
 
 ## Olympic and Paralympic record
 
-* Olympic silver medalist, fencing (London 2012); World and European Championships silver medalist; two-time Universiade champion; Honored Master of Sport.
+* Olympic silver medalist, fencing (London 2012).
 * 3.5 years of volunteer parafencing development work in the US, building toward broader access to adaptive fencing, ongoing through the LA28 Games cycle on home soil.
 * Chair, USA Fencing Hall of Fame Committee (October 2024 to present).
 
