@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Olympic medalist. Independent researcher. Program and delivery leader."
+title: "Olympic medalist. Independent researcher. Leader in program delivery and AI implementation."
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 
 I am an Olympic silver medalist and a program leader with 15+ years of international experience at the intersection of sport, technology, and education. I have operated inside one of the most complex delivery environments in the world, the LA28 Olympic and Paralympic Games organizing committee, built and run businesses of my own, advised organizations from a City of Los Angeles program to national governing bodies, and presented my research at international conferences: three published papers on AI, VR, and AR in sport, one click away on this site.
 
-I design and run complex programs involving distributed teams, high-stakes execution, and real-world constraints, translating strategic intent into operations people can actually execute. That is the work I choose: leadership measured in delivered outcomes.
+I design and run complex programs involving distributed teams, high-stakes execution, and real-world constraints, translating strategic intent into operations people can actually execute. The same practice runs on a second track: implementing AI where it does real operational work. Salesforce and CRM systems, agent and automation workflows (n8n, Apps Script, Gemini API, Claude), and the AI production tools I shipped as a startup COO. That is the work I choose: leadership measured in delivered outcomes.
 
 What that has looked like in practice:
 

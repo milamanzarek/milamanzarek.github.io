@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Olympic silver medalist, independent researcher, and program and delivery leader with 15+ years of international experience, including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee.
+Olympic silver medalist, independent researcher, and leader in program delivery and AI implementation, with 15+ years of international experience including 2.5 years inside the LA28 Olympic and Paralympic Games organizing committee. AI and automation delivered in production since 2017: CRM and agent workflows, LLM-based internal tools, and the operations stacks behind 25+ client projects.
 
 ## Professional experience
 
