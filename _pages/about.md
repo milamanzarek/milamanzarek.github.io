@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-**Olympic medalist. Independent researcher. Leader in program delivery and AI implementation.**
+**Olympic medalist. Independent researcher. Leader in program delivery and AI implementation.**
 
 I am an Olympic silver medalist and a program leader with 15+ years of international experience at the intersection of sport, technology, and education. I have operated inside one of the most complex delivery environments in the world, the LA28 Olympic and Paralympic Games organizing committee, built and run businesses of my own, advised organizations from a City of Los Angeles program to national governing bodies, and presented my research at international conferences: three published papers on AI, VR, and AR in sport, one click away on this site.
 

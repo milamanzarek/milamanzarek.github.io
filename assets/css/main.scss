@@ -54,3 +54,7 @@
 @media (max-width: 500px) {
   .badge-wall { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* No orphan words: last lines never carry a single word (Kamilla rule, 2026-08-16) */
+p, li, .archive__item-excerpt { text-wrap: pretty; }
+h1, h2, h3, h4, .page__title { text-wrap: balance; }
