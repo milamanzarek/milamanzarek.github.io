@@ -118,7 +118,7 @@
  .ba-chip.after { background: var(--mint-dim); border-color: transparent; color: var(--mint); }
  .ba-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
  .ba-panel { display: flex; flex-direction: column; }
- .ba-media { position: relative; flex: 1 1 auto; min-height: 320px; }
+ .ba-media { position: relative; aspect-ratio: 4 / 5; }
  .ba-media img {
  position: absolute;
  inset: 0;
@@ -127,10 +127,9 @@
  object-fit: cover;
  object-position: center;
  }
- .ba-panel .proof-caption { flex: 0 0 auto; }
- @media (max-width: 900px) {
- .ba-media { flex: none; aspect-ratio: 4 / 3; min-height: 0; }
- }
+ .ba-media.ba-fit { background: #ffffff; }
+ .ba-media.ba-fit img { object-fit: contain; }
+ .ba-panel .proof-caption { flex: 1 0 auto; align-items: start; }
  .proof-panel img { width: 100%; height: auto; }
  .portrait-proof-image {
  width: 100%;
@@ -343,11 +342,13 @@
 
  <figure class="proof-panel ba-panel">
  <span class="ba-chip after">After</span>
+ <div class="ba-media ba-fit">
  <img
  src="https://res.cloudinary.com/dp9lnazkj/image/upload/w_1600,f_auto,q_auto:best/inventory-distribution-dashboard-la28-case-study_jgdmbe.webp"
  alt="LA28 inventory distribution dashboard showing inventory status, total inventory value, donation value, quarterly distribution reports, warehouse notes, and item-level donation tracking."
  loading="lazy"
  >
+ </div>
  <figcaption class="proof-caption">
  <div>
  <p class="proof-title">Inventory distribution dashboard</p>
