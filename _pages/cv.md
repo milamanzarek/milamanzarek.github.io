@@ -70,6 +70,7 @@ Olympic silver medalist, independent researcher, and program and delivery leader
 ## Olympic and Paralympic record
 
 * Olympic silver medalist, fencing (London 2012).
+* World University Games Champion (2011).
 * 3.5 years of volunteer parafencing development work in the US; ongoing through the LA28 Games cycle.
 * Ambassador, 2013 Summer Universiade (Kazan).
 
